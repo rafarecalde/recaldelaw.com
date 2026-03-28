@@ -145,32 +145,79 @@ ul { list-style: none; }
 
 /* ---- Hero ---- */
 .hero {
-  padding: 160px 0 100px;
-  background: var(--cream);
-  border-bottom: 1px solid var(--gray-200);
+  padding: 180px 0 120px;
+  background: linear-gradient(165deg, var(--navy) 0%, #1e2d40 55%, #243044 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(176,141,87,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 .hero-content {
-  max-width: 720px;
+  max-width: 760px;
+  position: relative;
+  z-index: 1;
+}
+.hero-kicker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  margin-bottom: 24px;
 }
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 4.5vw, 3.25rem);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
   font-weight: 600;
-  line-height: 1.2;
-  color: var(--navy);
-  margin-bottom: 24px;
+  line-height: 1.18;
+  color: var(--white);
+  margin-bottom: 28px;
 }
 .hero-sub {
   font-size: 1.1rem;
-  line-height: 1.75;
-  color: var(--gray-600);
-  margin-bottom: 36px;
-  max-width: 600px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 40px;
+  max-width: 620px;
 }
 .hero-cta {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+}
+.hero .btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+}
+.hero .btn-primary:hover {
+  background: var(--gold-light);
+}
+.hero .btn-outline {
+  border-color: rgba(255,255,255,0.3);
+  color: var(--white);
+}
+.hero .btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.5);
+  color: var(--white);
 }
 
 /* ---- Sections ---- */
@@ -558,8 +605,8 @@ ul { list-style: none; }
   }
   .nav-links.open { display: flex; }
 
-  .hero { padding: 120px 0 72px; }
-  .hero h1 { font-size: 2rem; }
+  .hero { padding: 130px 0 80px; }
+  .hero h1 { font-size: 2.1rem; }
 
   .section { padding: 64px 0; }
 
