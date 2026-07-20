@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Series Seed Lawyer — Recalde Law Firm | Miami</title>
+  <meta name="description" content="Series Seed counsel for early-stage founders. Term sheet review, stock purchase agreement, investor rights, cap table structuring. Based in Miami, serving founders nationally.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F983DQ22DR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F983DQ22DR');</script>
+  <style>
+    /* Landing page overrides */
+    .lp-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 100px 0 80px;
+    }
+    .lp-hero .container {
+      max-width: 740px;
+    }
+    .lp-kicker {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .lp-hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .lp-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.75;
+      max-width: 600px;
+      margin-bottom: 36px;
+    }
+    .lp-hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* What we handle */
+    .lp-services {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .lp-services h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .lp-services .lp-intro {
+      font-size: 1rem;
+      color: var(--gray-600);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+    .lp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .lp-item {
+      border-left: 2px solid var(--gold);
+      padding-left: 20px;
+    }
+    .lp-item h3 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .lp-item p {
+      font-size: 0.93rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+    }
+
+    /* Why Series Seed is different */
+    .lp-explainer {
+      background: var(--cream);
+      padding: 80px 0;
+    }
+    .lp-explainer .container {
+      max-width: 700px;
+    }
+    .lp-explainer h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+    .lp-explainer p {
+      font-size: 1rem;
+      color: var(--gray-700);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* CTA block */
+    .lp-cta {
+      background: var(--navy);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .lp-cta h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .lp-cta p {
+      color: rgba(255,255,255,0.72);
+      font-size: 1rem;
+      margin-bottom: 36px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+    .lp-cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Contact form */
+    .lp-form {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .lp-form .container {
+      max-width: 600px;
+    }
+    .lp-form h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .lp-form .lp-intro {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 12px 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--navy);
+      background: var(--white);
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-submit {
+      margin-top: 8px;
+    }
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+      .lp-hero-ctas { flex-direction: column; }
+      .lp-cta-buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Recalde Law Firm</a>
+      <ul class="nav-links">
+        <li><a href="../#practice-areas">Practice Areas</a></li>
+        <li><a href="../blog/">Insights</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="#contact-form" class="btn btn-nav">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="lp-hero">
+    <div class="container">
+      <p class="lp-kicker">Series Seed Counsel</p>
+      <h1>Legal counsel for your Series Seed round.</h1>
+      <p>A Series Seed is your company's first priced equity round — and the document package you sign today will set the governance template for every round that follows. We help founders and their investors get the documents right the first time.</p>
+      <div class="lp-hero-ctas">
+        <a href="#contact-form" class="btn btn-primary">Schedule a Conversation</a>
+        <a href="../blog/safe-vs-priced-round-seed-raise/" class="btn btn-outline" style="border-color:rgba(255,255,255,0.35);color:rgba(255,255,255,0.85);">SAFE vs. Priced Round →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- What we handle -->
+  <section class="lp-services">
+    <div class="container">
+      <h2>What Series Seed counsel covers</h2>
+      <p class="lp-intro">A Series Seed financing typically involves a stock purchase agreement, investor rights agreement, right of first refusal and co-sale agreement, and voting agreement — plus the term sheet that precedes them. We draft, review, and negotiate all of it.</p>
+      <div class="lp-grid">
+        <div class="lp-item">
+          <h3>Term Sheet Review</h3>
+          <p>Before you sign anything, we walk through the term sheet with you — valuation, option pool, liquidation preference, board composition, and protective provisions. The term sheet sets the baseline for everything that follows.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Stock Purchase Agreement</h3>
+          <p>The core acquisition document. We review or draft representations and warranties, closing conditions, and the mechanics of the share issuance — making sure the company's obligations are accurate and bounded.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Investor Rights Agreement</h3>
+          <p>Information rights, pro-rata rights, registration rights, and any right of first offer on new securities. We negotiate the terms that govern your ongoing relationship with investors through future rounds.</p>
+        </div>
+        <div class="lp-item">
+          <h3>ROFR &amp; Co-Sale Agreement</h3>
+          <p>Governs secondary transfers of founder shares. We structure these provisions to protect founders while giving investors the protections they reasonably expect.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Voting Agreement</h3>
+          <p>Board composition, drag-along obligations, and voting obligations in future transactions. Board seats and drag-along triggers negotiated at this stage shape your exit options years from now.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Cap Table &amp; 409A Coordination</h3>
+          <p>We review your cap table for accuracy before the round closes and coordinate the 409A valuation you'll need before issuing post-round employee options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explainer -->
+  <section class="lp-explainer">
+    <div class="container">
+      <h2>Why Series Seed is different from a SAFE or convertible note</h2>
+      <p>SAFEs and convertible notes defer the hard questions — valuation, governance, investor rights — until a future priced round. A Series Seed answers them now. That's both the advantage and the reason it requires more care.</p>
+      <p>In a Series Seed, investors receive actual preferred stock with defined rights: a liquidation preference that determines who gets paid first at exit, voting rights that may give them a say over future financing decisions, and information rights that require ongoing financial reporting. The board may change composition. Future investors will see this document package as the starting point for their own negotiation.</p>
+      <p>Getting these terms right at the Series Seed stage is materially easier — and less expensive — than renegotiating unfavorable provisions at Series A when leverage has shifted. We approach Series Seed counsel with that long-term view.</p>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section class="lp-form" id="contact-form">
+    <div class="container">
+      <h2>Let's talk about your round.</h2>
+      <p class="lp-intro">Tell us where you are in the process and we'll schedule a conversation. No commitment required.</p>
+      <form action="https://formspree.io/f/mqegejrg" method="POST">
+        <input type="hidden" name="_subject" value="Series Seed Inquiry — recaldelaw.com">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Acme Inc.">
+          </div>
+          <div class="form-group">
+            <label for="stage">Where are you in the process?</label>
+            <select id="stage" name="stage">
+              <option value="">Select one</option>
+              <option>Evaluating term sheet</option>
+              <option>Term sheet signed, need documents</option>
+              <option>Planning a raise, not started</option>
+              <option>Investor sent documents, need review</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" placeholder="Round size, timeline, investor type, or anything else relevant..."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+        <p class="form-note">We typically respond within one business day. This form does not create an attorney-client relationship.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-brand">Recalde Law Firm, P.A.</p>
+        <p class="footer-disclaimer">This website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site.</p>
+        <p class="footer-copy">&copy; 2026 Recalde Law Firm, P.A. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20);});</script>
+</body>
+</html>
