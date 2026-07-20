@@ -588,6 +588,90 @@ ul { list-style: none; }
   font-size: 0.8rem;
 }
 
+/* ---- Founders Section ---- */
+.section-founders {
+  background: var(--navy);
+  color: var(--white);
+}
+.founders-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 80px;
+  align-items: start;
+}
+.founders-kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.founders-text h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+.founders-text > p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+.founders-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.founders-list li {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.97rem;
+  line-height: 1.5;
+  padding-left: 20px;
+  position: relative;
+}
+.founders-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 600;
+}
+.founders-list strong {
+  color: var(--white);
+}
+.founders-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 8px;
+}
+.founders-stat {
+  border-left: 2px solid var(--gold);
+  padding-left: 24px;
+}
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.stat-label {
+  display: block;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
@@ -613,6 +697,18 @@ ul { list-style: none; }
   .practice-detail-inner {
     grid-template-columns: 1fr;
     padding-left: 32px;
+  }
+  .founders-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .founders-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .founders-stat {
+    flex: 1 1 200px;
   }
   .clients-grid { grid-template-columns: 1fr; }
 
