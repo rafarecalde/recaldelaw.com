@@ -594,10 +594,8 @@ ul { list-style: none; }
   color: var(--white);
 }
 .founders-layout {
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 80px;
-  align-items: start;
+  display: block;
+  max-width: 680px;
 }
 .founders-kicker {
   font-size: 0.72rem;
