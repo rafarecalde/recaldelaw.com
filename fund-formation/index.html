@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund Formation and SPV Lawyer | Recalde Law Firm</title>
+  <meta name="description" content="Recalde Law Firm advises sponsors, managers, family offices, and investor groups on the formation of funds, SPVs, syndicates, co-investment vehicles, and other private investment structures.">
+  <link rel="canonical" href="https://recaldelaw.com/fund-formation/">
+  <meta property="og:title" content="Fund Formation and SPV Lawyer | Recalde Law Firm">
+  <meta property="og:description" content="Recalde Law Firm advises sponsors, managers, family offices, and investor groups on the formation of funds, SPVs, syndicates, co-investment vehicles, and other private investment structures.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://recaldelaw.com/fund-formation/">
+  <!-- Google Analytics + Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F983DQ22DR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F983DQ22DR');gtag('config','AW-1020943370');</script>
+  <script>function gtag_report_conversion(url){var callback=function(){if(typeof(url)!='undefined'){window.location=url;}};gtag('event','conversion',{'send_to':'AW-1020943370/CXe2CPPUwMIZEIq46eYD','event_callback':callback});return false;}</script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Recalde Law Firm — Fund Formation & Private Investment Vehicles","url":"https://recaldelaw.com/fund-formation/","description":"Legal counsel for fund sponsors, investment managers, family offices, and investor groups on the formation and operation of private investment vehicles.","telephone":"+13057929100","email":"rafael@recaldelaw.com","areaServed":["United States","Florida","Miami"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Fund Formation Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"SPV Formation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Venture Capital Fund Formation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Private Equity Fund Formation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Real Estate Investment Vehicle Formation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Regulation D Offerings"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Fund Document Preparation"}}]},"address":{"@type":"PostalAddress","streetAddress":"1111 Brickell Avenue, 10th Floor","addressLocality":"Miami","addressRegion":"FL","postalCode":"33131","addressCountry":"US"}}</script>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ---- Fund Formation Page ---- */
+
+    .ff-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 130px 0 80px;
+    }
+    .ff-kicker {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    .ff-hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 500;
+      line-height: 1.12;
+      color: var(--white);
+      max-width: 780px;
+      margin-bottom: 24px;
+    }
+    .ff-hero-intro {
+      font-size: 1.05rem;
+      line-height: 1.78;
+      color: rgba(255,255,255,0.76);
+      max-width: 660px;
+      margin-bottom: 36px;
+    }
+    .ff-hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .ff-breadcrumb {
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.42);
+      margin-bottom: 20px;
+    }
+    .ff-breadcrumb a { color: rgba(255,255,255,0.42); }
+    .ff-breadcrumb a:hover { color: var(--gold); }
+    .ff-breadcrumb span { margin: 0 7px; }
+
+    /* ---- Diagram strip ---- */
+    .ff-diagram {
+      background: var(--navy-light);
+      padding: 0;
+      overflow: hidden;
+    }
+    .ff-diagram-scroll {
+      display: flex;
+      align-items: stretch;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .ff-diagram-scroll::-webkit-scrollbar { display: none; }
+    .ff-diag-node {
+      flex: 1;
+      min-width: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 20px;
+      position: relative;
+      border-right: 1px solid rgba(176,141,87,0.15);
+      text-align: center;
+      transition: background var(--transition);
+    }
+    .ff-diag-node:last-child { border-right: none; }
+    .ff-diag-node:hover { background: rgba(176,141,87,0.06); }
+    .ff-diag-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .ff-diag-title {
+      font-family: var(--font-heading);
+      font-size: 1.0rem;
+      color: rgba(255,255,255,0.88);
+      font-weight: 500;
+    }
+    .ff-diag-sub {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.38);
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+    .ff-diag-connector {
+      position: absolute;
+      right: -1px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      opacity: 0.45;
+      z-index: 1;
+    }
+    .ff-diag-node:last-child .ff-diag-connector { display: none; }
+
+    /* ---- Section labels ---- */
+    .ff-section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .ff-section-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 500;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .ff-section-intro {
+      font-size: 1.0rem;
+      color: var(--gray-600);
+      max-width: 640px;
+      margin-bottom: 48px;
+      line-height: 1.75;
+    }
+
+    /* ---- Vehicle cards ---- */
+    .ff-vehicles {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .ff-vehicles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--gray-200);
+      border: 1px solid var(--gray-200);
+    }
+    .ff-vehicle-card {
+      background: var(--white);
+      padding: 36px 30px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s ease;
+    }
+    .ff-vehicle-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+    .ff-vehicle-card:hover { background: var(--cream); }
+    .ff-vehicle-card:hover::after { transform: scaleX(1); }
+    .ff-vehicle-icon {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 18px;
+      color: var(--gold);
+    }
+    .ff-vehicle-icon svg { width: 100%; height: 100%; }
+    .ff-vehicle-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .ff-vehicle-card > p {
+      font-size: 0.87rem;
+      line-height: 1.65;
+      color: var(--gray-600);
+      margin-bottom: 16px;
+    }
+    .ff-vehicle-card ul { list-style: none; padding: 0; }
+    .ff-vehicle-card ul li {
+      font-size: 0.81rem;
+      color: var(--gray-600);
+      padding: 3px 0 3px 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .ff-vehicle-card ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.7rem;
+      top: 4px;
+    }
+
+    /* ---- Services ---- */
+    .ff-services {
+      background: var(--navy);
+      color: var(--white);
+      padding: 80px 0;
+    }
+    .ff-services .ff-section-heading { color: var(--white); }
+    .ff-services .ff-section-intro { color: rgba(255,255,255,0.62); }
+    .ff-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 56px;
+    }
+    .ff-services-group h4 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(176,141,87,0.22);
+    }
+    .ff-services-group ul { list-style: none; }
+    .ff-services-group ul li {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.7);
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      line-height: 1.5;
+    }
+
+    /* ---- Clients ---- */
+    .ff-clients {
+      background: var(--cream);
+      padding: 80px 0;
+    }
+    .ff-clients-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 40px;
+    }
+    .ff-client-tag {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-left: 3px solid var(--gold);
+      padding: 13px 16px;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    /* ---- Process ---- */
+    .ff-process {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .ff-process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      margin-top: 48px;
+      position: relative;
+    }
+    .ff-process-steps::before {
+      content: '';
+      position: absolute;
+      top: 27px;
+      left: calc(10% + 8px);
+      right: calc(10% + 8px);
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), var(--gold), transparent);
+      opacity: 0.3;
+    }
+    .ff-step { text-align: center; padding: 0 12px; }
+    .ff-step-num {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 1.5px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .ff-step h4 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .ff-step p {
+      font-size: 0.81rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
+    /* ---- Cross-border ---- */
+    .ff-crossborder {
+      background: var(--navy-light);
+      color: var(--white);
+      padding: 80px 0;
+    }
+    .ff-crossborder-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .ff-crossborder .ff-section-heading { color: var(--white); }
+    .ff-crossborder p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.78;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+    .ff-cb-points { display: grid; gap: 10px; }
+    .ff-cb-point {
+      padding: 16px 20px;
+      border: 1px solid rgba(176,141,87,0.2);
+      border-left: 3px solid var(--gold);
+      background: rgba(255,255,255,0.03);
+      transition: background var(--transition);
+    }
+    .ff-cb-point:hover { background: rgba(176,141,87,0.07); }
+    .ff-cb-point strong {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .ff-cb-point span {
+      font-size: 0.79rem;
+      color: rgba(255,255,255,0.52);
+      line-height: 1.5;
+    }
+
+    /* ---- Related reading ---- */
+    .ff-related {
+      background: var(--gray-100);
+      padding: 56px 0;
+    }
+    .ff-related-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .ff-related-link {
+      display: block;
+      padding: 18px 20px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--navy);
+      line-height: 1.4;
+      transition: border-color var(--transition), color var(--transition);
+    }
+    .ff-related-link:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .ff-related-link::after { content: ' →'; font-weight: 400; }
+
+    /* ---- Form ---- */
+    .ff-form-section {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .ff-form-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .ff-form { margin-top: 36px; }
+    .ff-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    .ff-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .ff-form-group.full { grid-column: 1 / -1; }
+    .ff-form label {
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+    .ff-form input,
+    .ff-form select,
+    .ff-form textarea {
+      padding: 11px 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color var(--transition);
+      width: 100%;
+    }
+    .ff-form input:focus,
+    .ff-form select:focus,
+    .ff-form textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .ff-form textarea { resize: vertical; min-height: 100px; }
+    .ff-form-disclaimer {
+      font-size: 0.76rem;
+      color: var(--gray-600);
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 960px) {
+      .ff-vehicles-grid { grid-template-columns: repeat(2, 1fr); }
+      .ff-services-grid { grid-template-columns: repeat(2, 1fr); }
+      .ff-clients-grid { grid-template-columns: repeat(2, 1fr); }
+      .ff-crossborder-inner { grid-template-columns: 1fr; gap: 36px; }
+      .ff-related-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 700px) {
+      .ff-process-steps {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .ff-process-steps::before { display: none; }
+      .ff-step {
+        text-align: left;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+      .ff-step-num { flex-shrink: 0; margin: 0; width: 44px; height: 44px; font-size: 1.2rem; }
+    }
+    @media (max-width: 600px) {
+      .ff-vehicles-grid { grid-template-columns: 1fr; }
+      .ff-services-grid { grid-template-columns: 1fr; }
+      .ff-clients-grid { grid-template-columns: 1fr; }
+      .ff-form-row { grid-template-columns: 1fr; }
+      .ff-hero-ctas { flex-direction: column; align-items: flex-start; }
+      .ff-related-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Recalde Law Firm</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../#practice-areas">Practice Areas</a></li>
+        <li><a href="./" class="nav-active" style="color:var(--gold)">Fund Formation</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../blog/">Insights</a></li>
+        <li><a href="#inquiry-form" class="btn btn-nav">Discuss Your Vehicle</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="ff-hero">
+    <div class="container">
+      <p class="ff-breadcrumb"><a href="../">Recalde Law Firm</a> <span>/</span> Fund Formation</p>
+      <p class="ff-kicker">Fund Formation &amp; Private Investment Vehicles</p>
+      <h1>Legal Counsel for Funds, SPVs, and Private Investment Vehicles</h1>
+      <p class="ff-hero-intro">Recalde Law Firm advises fund sponsors, investment managers, family offices, entrepreneurs, and investor groups on the formation and operation of private investment vehicles. We structure traditional investment funds, single-investment SPVs, syndicates, co-investment vehicles, and other pooled investment arrangements — from initial structuring through investor onboarding, closing, and ongoing legal matters.</p>
+      <div class="ff-hero-ctas">
+        <a href="#inquiry-form" class="btn btn-primary" id="hero-cta">Discuss Your Investment Vehicle</a>
+        <a href="#ff-services" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);">What We Cover</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Entity Diagram Strip -->
+  <div class="ff-diagram">
+    <div class="ff-diagram-scroll">
+      <div class="ff-diag-node">
+        <div class="ff-diag-label">Investors</div>
+        <div class="ff-diag-title">LPs / Members</div>
+        <div class="ff-diag-sub">Capital commitment</div>
+        <div class="ff-diag-connector"></div>
+      </div>
+      <div class="ff-diag-node">
+        <div class="ff-diag-label">Fund Entity</div>
+        <div class="ff-diag-title">LP or LLC</div>
+        <div class="ff-diag-sub">Delaware formation</div>
+        <div class="ff-diag-connector"></div>
+      </div>
+      <div class="ff-diag-node">
+        <div class="ff-diag-label">Manager</div>
+        <div class="ff-diag-title">General Partner</div>
+        <div class="ff-diag-sub">Governance &amp; control</div>
+        <div class="ff-diag-connector"></div>
+      </div>
+      <div class="ff-diag-node">
+        <div class="ff-diag-label">Operations</div>
+        <div class="ff-diag-title">Management Co.</div>
+        <div class="ff-diag-sub">Fees &amp; carry</div>
+        <div class="ff-diag-connector"></div>
+      </div>
+      <div class="ff-diag-node">
+        <div class="ff-diag-label">Investments</div>
+        <div class="ff-diag-title">Portfolio / Assets</div>
+        <div class="ff-diag-sub">Companies · real estate · SPVs</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vehicle Types -->
+  <section class="ff-vehicles" id="vehicles">
+    <div class="container">
+      <p class="ff-section-label">Investment Structures</p>
+      <h2 class="ff-section-heading">Not every pooled investment needs to be a traditional fund.</h2>
+      <p class="ff-section-intro">We advise on the full spectrum of private investment structures — from single-asset SPVs organized for one transaction to multi-strategy funds with institutional investors. The right structure depends on your investor base, strategy, regulatory situation, and objectives.</p>
+      <div class="ff-vehicles-grid">
+
+        <div class="ff-vehicle-card">
+          <div class="ff-vehicle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3>Special Purpose Vehicles</h3>
+          <p>Single-investment vehicles formed to acquire or hold a specific asset or transaction. The fastest-moving structure in private markets — used for venture investments, real estate, co-investments, and secondary purchases.</p>
+          <ul>
+            <li>Startup and venture investments</li>
+            <li>Private company interests</li>
+            <li>Real estate acquisitions</li>
+            <li>Co-investments alongside a lead</li>
+            <li>Secondary transactions</li>
+            <li>Acquisition targets</li>
+          </ul>
+        </div>
+
+        <div class="ff-vehicle-card">
+          <div class="ff-vehicle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Venture Capital Funds</h3>
+          <p>Formation of venture capital investment structures for emerging managers, experienced investors formalizing their strategy, and VC sponsors launching successor vehicles.</p>
+          <ul>
+            <li>Fund LP or LLC entity</li>
+            <li>General partner entity</li>
+            <li>Management company formation</li>
+            <li>Carried-interest structure</li>
+            <li>LP agreements and investor documents</li>
+            <li>Initial and additional closings</li>
+          </ul>
+        </div>
+
+        <div class="ff-vehicle-card">
+          <div class="ff-vehicle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3z"/><path d="M3 3h18v4H3z"/></svg>
+          </div>
+          <h3>Private Equity &amp; Acquisition Funds</h3>
+          <p>Structures for sponsors pooling capital to acquire, operate, or invest in private businesses. From lower-middle-market buyout vehicles to deal-by-deal acquisition arrangements.</p>
+          <ul>
+            <li>Buyout and acquisition fund structures</li>
+            <li>Independent sponsor arrangements</li>
+            <li>Management fee and carry design</li>
+            <li>GP commitment structures</li>
+            <li>Co-investment side vehicles</li>
+          </ul>
+        </div>
+
+        <div class="ff-vehicle-card">
+          <div class="ff-vehicle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4v18"/><path d="M19 21V11l-7-4"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M9 17h1"/><path d="M14 14h1"/><path d="M14 18h1"/></svg>
+          </div>
+          <h3>Real Estate Investment Vehicles</h3>
+          <p>Funds, syndications, and SPVs formed for real estate investment strategies. We advise sponsors on structures suited to their asset type, investor base, and regulatory posture.</p>
+          <ul>
+            <li>Multifamily and residential</li>
+            <li>Commercial real estate</li>
+            <li>Development project structures</li>
+            <li>Single-property syndications</li>
+            <li>Portfolio acquisition funds</li>
+          </ul>
+        </div>
+
+        <div class="ff-vehicle-card">
+          <div class="ff-vehicle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4m0 0l-5.5 6.5m5.5-6.5l5.5 6.5"/></svg>
+          </div>
+          <h3>Syndicates &amp; Co-Investment Vehicles</h3>
+          <p>Deal-by-deal vehicles through which a sponsor or lead investor organizes participants for a single transaction. Separate co-investment SPVs for investors participating alongside an existing fund or lead.</p>
+          <ul>
+            <li>Lead-investor syndicates</li>
+            <li>Co-investment SPVs</li>
+            <li>Rolling fund structures</li>
+            <li>Investor club vehicles</li>
+          </ul>
+        </div>
+
+        <div class="ff-vehicle-card">
+          <div class="ff-vehicle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Family, Independent Sponsor &amp; Search Fund Structures</h3>
+          <p>Tailored investment structures for families investing collectively, independent sponsors raising deal-specific capital, and search fund sponsors acquiring a business to operate.</p>
+          <ul>
+            <li>Family investment vehicles and family offices</li>
+            <li>Independent sponsor arrangements</li>
+            <li>Search fund entities and investor documents</li>
+            <li>Joint ventures and club deals</li>
+            <li>Entrepreneur-organized investor groups</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="ff-services" id="ff-services">
+    <div class="container">
+      <p class="ff-section-label">What We Prepare</p>
+      <h2 class="ff-section-heading">Fund and Investment Vehicle Services</h2>
+      <p class="ff-section-intro">From initial entity formation through investor onboarding, documentation, and regulatory filings — we handle the complete legal work for private investment vehicles.</p>
+      <div class="ff-services-grid">
+        <div class="ff-services-group">
+          <h4>Entity Formation</h4>
+          <ul>
+            <li>Delaware limited partnership formation</li>
+            <li>Delaware LLC formation</li>
+            <li>General partner entity formation</li>
+            <li>Management company formation</li>
+            <li>Sponsor and carried-interest entities</li>
+            <li>Fund and SPV structuring analysis</li>
+          </ul>
+        </div>
+        <div class="ff-services-group">
+          <h4>Governing Documents</h4>
+          <ul>
+            <li>Limited partnership agreements (LPAs)</li>
+            <li>LLC operating agreements</li>
+            <li>Investment management agreements</li>
+            <li>Advisory agreements</li>
+            <li>Management agreements</li>
+            <li>Carried-interest and fee provisions</li>
+            <li>Transfer restriction provisions</li>
+            <li>Withdrawal and redemption provisions</li>
+          </ul>
+        </div>
+        <div class="ff-services-group">
+          <h4>Investor Documentation</h4>
+          <ul>
+            <li>Private placement memoranda (PPMs)</li>
+            <li>Subscription agreements</li>
+            <li>Investor questionnaires</li>
+            <li>Side letters</li>
+            <li>Capital call documentation</li>
+            <li>Investor admission and closing documents</li>
+            <li>Co-investment documentation</li>
+          </ul>
+        </div>
+        <div class="ff-services-group">
+          <h4>Securities &amp; Regulatory</h4>
+          <ul>
+            <li>Regulation D offering compliance</li>
+            <li>Rule 506(b) and Rule 506(c) analysis</li>
+            <li>Form D filings</li>
+            <li>State blue-sky notice filings</li>
+            <li>Bad actor disqualification analysis</li>
+            <li>Exempt reporting adviser analysis</li>
+            <li>Regulation S offshore offering compliance</li>
+          </ul>
+        </div>
+        <div class="ff-services-group">
+          <h4>Ongoing &amp; Post-Closing</h4>
+          <ul>
+            <li>Additional closings</li>
+            <li>LPA and operating agreement amendments</li>
+            <li>Investor transfers and assignments</li>
+            <li>Carry and fee restructuring</li>
+            <li>Regulatory update advice</li>
+            <li>Wind-down and liquidation</li>
+          </ul>
+        </div>
+        <div class="ff-services-group">
+          <h4>Related Counsel</h4>
+          <ul>
+            <li>RIA registration and compliance</li>
+            <li>Exempt reporting adviser filings</li>
+            <li>Marketing Rule compliance</li>
+            <li>Cross-border structuring</li>
+            <li>FIRPTA and foreign investor considerations</li>
+            <li>Cayman and offshore coordination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Represent -->
+  <section class="ff-clients">
+    <div class="container">
+      <p class="ff-section-label">Clients</p>
+      <h2 class="ff-section-heading">Who We Represent</h2>
+      <p class="ff-section-intro">We work with a range of sponsors, managers, and investor groups — from first-time managers raising their initial vehicle to established sponsors forming successor funds and additional-close SPVs.</p>
+      <div class="ff-clients-grid">
+        <div class="ff-client-tag">First-time fund managers</div>
+        <div class="ff-client-tag">Emerging managers</div>
+        <div class="ff-client-tag">Venture capital sponsors</div>
+        <div class="ff-client-tag">Private equity sponsors</div>
+        <div class="ff-client-tag">Real estate sponsors</div>
+        <div class="ff-client-tag">Independent sponsors</div>
+        <div class="ff-client-tag">Search fund sponsors</div>
+        <div class="ff-client-tag">Angel investor groups</div>
+        <div class="ff-client-tag">Syndicate leads</div>
+        <div class="ff-client-tag">Family offices</div>
+        <div class="ff-client-tag">Entrepreneurs organizing investor groups</div>
+        <div class="ff-client-tag">International sponsors and investors</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="ff-process">
+    <div class="container">
+      <p class="ff-section-label">How We Work</p>
+      <h2 class="ff-section-heading">From first conversation to first closing.</h2>
+      <p class="ff-section-intro">A clear process — from strategy to formation to closing — so you know where you are and what comes next.</p>
+      <div class="ff-process-steps">
+        <div class="ff-step">
+          <div class="ff-step-num">1</div>
+          <div class="ff-step-content">
+            <h4>Strategy Review</h4>
+            <p>Initial consultation covering investment strategy, investor base, regulatory considerations, and structuring objectives.</p>
+          </div>
+        </div>
+        <div class="ff-step">
+          <div class="ff-step-num">2</div>
+          <div class="ff-step-content">
+            <h4>Structure Analysis</h4>
+            <p>Entity selection, jurisdiction, exemption analysis, adviser registration considerations, and structure recommendation.</p>
+          </div>
+        </div>
+        <div class="ff-step">
+          <div class="ff-step-num">3</div>
+          <div class="ff-step-content">
+            <h4>Document Preparation</h4>
+            <p>Governing documents, offering materials, and investor subscription documents tailored to your vehicle and investor base.</p>
+          </div>
+        </div>
+        <div class="ff-step">
+          <div class="ff-step-num">4</div>
+          <div class="ff-step-content">
+            <h4>Investor Onboarding</h4>
+            <p>Investor admission, subscription processing, regulatory filings, and initial and subsequent closings.</p>
+          </div>
+        </div>
+        <div class="ff-step">
+          <div class="ff-step-num">5</div>
+          <div class="ff-step-content">
+            <h4>Ongoing Counsel</h4>
+            <p>Amendments, additional closings, regulatory updates, and ongoing legal support through the life of the vehicle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cross-Border -->
+  <section class="ff-crossborder">
+    <div class="container">
+      <div class="ff-crossborder-inner">
+        <div>
+          <p class="ff-section-label">International</p>
+          <h2 class="ff-section-heading">Cross-Border Investment Structures</h2>
+          <p>Recalde Law Firm regularly works with U.S. and international clients on investment structures involving investors, sponsors, or assets located in multiple jurisdictions. We coordinate with the client's tax advisers and foreign counsel when a structure involves non-U.S. investors, offshore entities, or cross-border ownership.</p>
+          <p>Our cross-border practice draws on experience with Latin American sponsors and investors, U.S.-based managers raising capital from non-U.S. sources, and international families investing through U.S.-based vehicles. We advise on structure — not on tax outcomes.</p>
+          <a href="#inquiry-form" class="btn btn-primary" style="margin-top:12px;" id="cb-cta">Discuss Your Structure</a>
+        </div>
+        <div class="ff-cb-points">
+          <div class="ff-cb-point">
+            <strong>Non-U.S. Investors</strong>
+            <span>Structuring considerations for offshore LPs, withholding, ECI, and FIRPTA where applicable to the vehicle or its assets</span>
+          </div>
+          <div class="ff-cb-point">
+            <strong>Offshore Fund Structures</strong>
+            <span>Coordination with Cayman, BVI, and other offshore counsel for parallel fund structures and offshore feeder vehicles</span>
+          </div>
+          <div class="ff-cb-point">
+            <strong>LATAM-Connected Vehicles</strong>
+            <span>U.S. investment vehicles for sponsors and investors with Latin American operations, assets, or capital sources</span>
+          </div>
+          <div class="ff-cb-point">
+            <strong>Regulation S Offerings</strong>
+            <span>Offshore offering structuring for non-U.S. investor tranches under Regulation S alongside domestic Regulation D tranches</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Reading -->
+  <section class="ff-related">
+    <div class="container">
+      <p class="ff-section-label">From the Insights Library</p>
+      <h2 class="ff-section-heading" style="font-size:1.5rem;margin-bottom:4px;">Related reading for sponsors and managers</h2>
+      <div class="ff-related-grid">
+        <a class="ff-related-link" href="../gp-lp-fund-structure-what-emerging-managers-need-to-understand/">GP/LP Fund Structure Explained</a>
+        <a class="ff-related-link" href="../rule-506b-vs-506c-choosing-the-right-regulation-d-exemption/">Rule 506(b) vs. 506(c)</a>
+        <a class="ff-related-link" href="../private-fund-subscription-agreement-what-managers-miss/">What Managers Miss in Subscription Agreements</a>
+        <a class="ff-related-link" href="../carried-interest-structure-tax-treatment-section-1061/">Carried Interest and Section 1061</a>
+        <a class="ff-related-link" href="../offshore-fund-structures-cayman-bvi-delaware-compared/">Cayman vs. BVI vs. Delaware Funds</a>
+        <a class="ff-related-link" href="../side-letters-what-institutional-investors-actually-negotiate/">Side Letters: What Investors Negotiate</a>
+        <a class="ff-related-link" href="../profits-interests-as-equity-compensation-in-fund-structures/">Profits Interests in Fund Structures</a>
+        <a class="ff-related-link" href="../what-is-eci-and-why-it-matters-when-structuring-an-offshore-fund/">ECI and Offshore Fund Structuring</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="ff-form-section" id="inquiry-form">
+    <div class="container">
+      <div class="ff-form-wrap">
+        <p class="ff-section-label">Get in Touch</p>
+        <h2 class="ff-section-heading">Let's discuss your investment vehicle.</h2>
+        <p class="ff-section-intro" style="margin-bottom:0;">Tell us about your proposed structure and we will schedule a conversation. No commitment required.</p>
+        <form class="ff-form" action="https://formspree.io/f/mqegejrg" method="POST" id="fund-form">
+          <input type="hidden" name="_subject" value="Fund Formation Inquiry — recaldelaw.com">
+          <input type="hidden" name="source_page" value="Fund Formation">
+          <div class="ff-form-row">
+            <div class="ff-form-group">
+              <label for="ff-name">Name</label>
+              <input type="text" id="ff-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="ff-form-group">
+              <label for="ff-email">Email</label>
+              <input type="email" id="ff-email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="ff-form-row">
+            <div class="ff-form-group">
+              <label for="ff-tel">Telephone</label>
+              <input type="tel" id="ff-tel" name="telephone" placeholder="+1 (305) 000-0000">
+            </div>
+            <div class="ff-form-group">
+              <label for="ff-company">Company or Sponsor Name</label>
+              <input type="text" id="ff-company" name="company" placeholder="Fund or sponsor name">
+            </div>
+          </div>
+          <div class="ff-form-row">
+            <div class="ff-form-group">
+              <label for="ff-vehicle">Type of Investment Vehicle</label>
+              <select id="ff-vehicle" name="vehicle_type">
+                <option value="">Select one</option>
+                <option>SPV</option>
+                <option>Venture capital fund</option>
+                <option>Private equity fund</option>
+                <option>Real estate fund or syndication</option>
+                <option>Co-investment vehicle</option>
+                <option>Search fund</option>
+                <option>Family investment vehicle</option>
+                <option>Independent sponsor transaction</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="ff-form-group">
+              <label for="ff-amount">Estimated Amount to Be Raised</label>
+              <input type="text" id="ff-amount" name="raise_amount" placeholder="e.g. $2M, $10M, $50M">
+            </div>
+          </div>
+          <div class="ff-form-row">
+            <div class="ff-form-group full">
+              <label for="ff-description">Brief Description of the Proposed Investment</label>
+              <textarea id="ff-description" name="description" placeholder="Describe the investment strategy, target assets, or transaction..."></textarea>
+            </div>
+          </div>
+          <div class="ff-form-row">
+            <div class="ff-form-group">
+              <label for="ff-target">Target Launch or Closing Date</label>
+              <input type="text" id="ff-target" name="target_date" placeholder="e.g. Q3 2026, October 2026">
+            </div>
+          </div>
+          <div style="margin-top:20px;">
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">Send Inquiry</button>
+          </div>
+          <p class="ff-form-disclaimer">Submitting this form does not create an attorney-client relationship. Do not include confidential information in your initial message. This website is for informational purposes only and does not constitute legal advice. Recalde Law Firm does not act as an investment adviser, broker-dealer, placement agent, or fund administrator.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-brand">Recalde Law Firm, P.A.</p>
+        <p class="footer-disclaimer">This website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Recalde Law Firm does not act as an investment adviser, broker-dealer, placement agent, or fund administrator.</p>
+        <p class="footer-copy">&copy; 2026 Recalde Law Firm, P.A. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        navLinks.classList.toggle('nav-open', !expanded);
+      });
+    }
+
+    // Conversion: CTA button clicks
+    document.getElementById('hero-cta').addEventListener('click', () => gtag_report_conversion());
+    document.getElementById('cb-cta').addEventListener('click', () => gtag_report_conversion());
+
+    // Conversion: form submit
+    document.getElementById('fund-form').addEventListener('submit', function() {
+      gtag_report_conversion();
+      gtag('event', 'fund_form_submit', { page: 'fund-formation' });
+    });
+
+    // Conversion: phone / email link clicks
+    document.querySelectorAll('a[href^="tel:"]').forEach(el =>
+      el.addEventListener('click', () => {
+        gtag_report_conversion();
+        gtag('event', 'phone_click', { page: 'fund-formation' });
+      })
+    );
+    document.querySelectorAll('a[href^="mailto:"]').forEach(el =>
+      el.addEventListener('click', () => {
+        gtag('event', 'email_click', { page: 'fund-formation' });
+      })
+    );
+  </script>
+</body>
+</html>
