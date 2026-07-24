@@ -83,19 +83,22 @@
     .ff-diagram-scroll::-webkit-scrollbar { display: none; }
     .ff-diag-node {
       flex: 1;
-      min-width: 160px;
+      min-width: 180px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 28px 20px;
+      padding: 32px 24px;
       position: relative;
       border-right: 1px solid rgba(176,141,87,0.15);
       text-align: center;
       transition: background var(--transition);
+      text-decoration: none;
+      cursor: pointer;
     }
     .ff-diag-node:last-child { border-right: none; }
-    .ff-diag-node:hover { background: rgba(176,141,87,0.06); }
+    .ff-diag-node:hover { background: rgba(176,141,87,0.08); }
+    .ff-diag-node:hover .ff-diag-title { color: var(--gold); }
     .ff-diag-label {
       font-size: 0.68rem;
       font-weight: 600;
@@ -106,15 +109,23 @@
     }
     .ff-diag-title {
       font-family: var(--font-heading);
-      font-size: 1.0rem;
+      font-size: 1.05rem;
       color: rgba(255,255,255,0.88);
       font-weight: 500;
+      transition: color var(--transition);
+      margin-bottom: 8px;
     }
     .ff-diag-sub {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.38);
-      margin-top: 4px;
-      letter-spacing: 0.04em;
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.44);
+      line-height: 1.5;
+    }
+    .ff-diag-work {
+      font-size: 0.68rem;
+      color: rgba(176,141,87,0.65);
+      margin-top: 10px;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
     }
     .ff-diag-connector {
       position: absolute;
@@ -234,28 +245,26 @@
     }
     .ff-services .ff-section-heading { color: var(--white); }
     .ff-services .ff-section-intro { color: rgba(255,255,255,0.62); }
-    .ff-services-grid {
+    .ff-services-prose {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px 56px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 60px;
     }
-    .ff-services-group h4 {
-      font-size: 0.7rem;
+    .ff-service-block {
+      padding-top: 22px;
+      border-top: 1px solid rgba(176,141,87,0.22);
+    }
+    .ff-service-block h4 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
       font-weight: 600;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(176,141,87,0.22);
+      color: var(--white);
+      margin-bottom: 12px;
     }
-    .ff-services-group ul { list-style: none; }
-    .ff-services-group ul li {
-      font-size: 0.84rem;
-      color: rgba(255,255,255,0.7);
-      padding: 5px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-      line-height: 1.5;
+    .ff-service-block p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.60);
+      line-height: 1.75;
     }
 
     /* ---- Clients ---- */
@@ -263,20 +272,32 @@
       background: var(--cream);
       padding: 80px 0;
     }
-    .ff-clients-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
+    .ff-clients-wrap {
       margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
     }
-    .ff-client-tag {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-left: 3px solid var(--gold);
-      padding: 13px 16px;
+    .ff-clients-text {
+      font-size: 0.95rem;
+      color: var(--gray-700);
+      line-height: 1.85;
+    }
+    .ff-clients-text p { margin-bottom: 14px; }
+    .ff-clients-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .ff-clients-row {
       font-size: 0.84rem;
       font-weight: 500;
       color: var(--navy);
+      padding: 11px 16px;
+      border: 1px solid var(--gray-200);
+      border-left: 2px solid var(--gold);
+      background: var(--white);
       line-height: 1.3;
     }
 
@@ -461,8 +482,8 @@
     /* ---- Responsive ---- */
     @media (max-width: 960px) {
       .ff-vehicles-grid { grid-template-columns: repeat(2, 1fr); }
-      .ff-services-grid { grid-template-columns: repeat(2, 1fr); }
-      .ff-clients-grid { grid-template-columns: repeat(2, 1fr); }
+      .ff-services-prose { grid-template-columns: 1fr; }
+      .ff-clients-wrap { grid-template-columns: 1fr; gap: 32px; }
       .ff-crossborder-inner { grid-template-columns: 1fr; gap: 36px; }
       .ff-related-grid { grid-template-columns: repeat(2, 1fr); }
     }
@@ -482,8 +503,6 @@
     }
     @media (max-width: 600px) {
       .ff-vehicles-grid { grid-template-columns: 1fr; }
-      .ff-services-grid { grid-template-columns: 1fr; }
-      .ff-clients-grid { grid-template-columns: 1fr; }
       .ff-form-row { grid-template-columns: 1fr; }
       .ff-hero-ctas { flex-direction: column; align-items: flex-start; }
       .ff-related-grid { grid-template-columns: 1fr; }
@@ -526,35 +545,40 @@
   <!-- Entity Diagram Strip -->
   <div class="ff-diagram">
     <div class="ff-diagram-scroll">
-      <div class="ff-diag-node">
+      <a href="../gp-lp-fund-structure-what-emerging-managers-need-to-understand/" class="ff-diag-node">
         <div class="ff-diag-label">Investors</div>
-        <div class="ff-diag-title">LPs / Members</div>
-        <div class="ff-diag-sub">Capital commitment</div>
+        <div class="ff-diag-title">LPs &amp; Members</div>
+        <div class="ff-diag-sub">Capital commitments, drawdowns</div>
+        <div class="ff-diag-work">Subscription agreements · investor questionnaires · side letters</div>
         <div class="ff-diag-connector"></div>
-      </div>
-      <div class="ff-diag-node">
+      </a>
+      <a href="../gp-lp-fund-structure-what-emerging-managers-need-to-understand/" class="ff-diag-node">
         <div class="ff-diag-label">Fund Entity</div>
         <div class="ff-diag-title">LP or LLC</div>
-        <div class="ff-diag-sub">U.S. entity formation</div>
+        <div class="ff-diag-sub">The pooling vehicle</div>
+        <div class="ff-diag-work">Entity formation · limited partnership agreement · operating agreement</div>
         <div class="ff-diag-connector"></div>
-      </div>
-      <div class="ff-diag-node">
+      </a>
+      <a href="../carried-interest-structure-tax-treatment-section-1061/" class="ff-diag-node">
         <div class="ff-diag-label">Manager</div>
         <div class="ff-diag-title">General Partner</div>
-        <div class="ff-diag-sub">Governance &amp; control</div>
+        <div class="ff-diag-sub">Investment control &amp; governance</div>
+        <div class="ff-diag-work">GP entity formation · governance provisions · key-person clauses</div>
         <div class="ff-diag-connector"></div>
-      </div>
-      <div class="ff-diag-node">
+      </a>
+      <a href="../carried-interest-structure-tax-treatment-section-1061/" class="ff-diag-node">
         <div class="ff-diag-label">Operations</div>
         <div class="ff-diag-title">Management Co.</div>
-        <div class="ff-diag-sub">Fees &amp; carry</div>
+        <div class="ff-diag-sub">Day-to-day management</div>
+        <div class="ff-diag-work">Management fee structure · carried interest · advisory agreements</div>
         <div class="ff-diag-connector"></div>
-      </div>
-      <div class="ff-diag-node">
+      </a>
+      <a href="../spv-formation/" class="ff-diag-node">
         <div class="ff-diag-label">Investments</div>
         <div class="ff-diag-title">Portfolio / Assets</div>
         <div class="ff-diag-sub">Companies · real estate · SPVs</div>
-      </div>
+        <div class="ff-diag-work">Co-investment vehicles · deal docs · follow-on SPVs</div>
+      </a>
     </div>
   </div>
 
@@ -668,76 +692,30 @@
       <p class="ff-section-label">What We Prepare</p>
       <h2 class="ff-section-heading">Fund and Investment Vehicle Services</h2>
       <p class="ff-section-intro">From initial entity formation through investor onboarding, documentation, and regulatory filings — we handle the complete legal work for private investment vehicles.</p>
-      <div class="ff-services-grid">
-        <div class="ff-services-group">
-          <h4>Entity Formation</h4>
-          <ul>
-            <li>Limited partnership formation</li>
-            <li>LLC formation</li>
-            <li>General partner entity formation</li>
-            <li>Management company formation</li>
-            <li>Sponsor and carried-interest entities</li>
-            <li>Fund and SPV structuring analysis</li>
-          </ul>
+      <div class="ff-services-prose">
+        <div class="ff-service-block">
+          <h4>Entity Formation &amp; Structure</h4>
+          <p>We form the entities that make the vehicle work — the fund LP or LLC, general partner, management company, and sponsor and carry structures. Entity selection, jurisdiction, and structure are determined by your investor base, regulatory situation, and operational objectives. We advise on structure first, then build it.</p>
         </div>
-        <div class="ff-services-group">
+        <div class="ff-service-block">
           <h4>Governing Documents</h4>
-          <ul>
-            <li>Limited partnership agreements (LPAs)</li>
-            <li>LLC operating agreements</li>
-            <li>Investment management agreements</li>
-            <li>Advisory agreements</li>
-            <li>Management agreements</li>
-            <li>Carried-interest and fee provisions</li>
-            <li>Transfer restriction provisions</li>
-            <li>Withdrawal and redemption provisions</li>
-          </ul>
+          <p>Limited partnership agreements, LLC operating agreements, investment management agreements, and the carried-interest and fee provisions that define how the vehicle operates and how managers are compensated. Drafted to reflect market terms for your vehicle type and investor base — not a generic template.</p>
         </div>
-        <div class="ff-services-group">
+        <div class="ff-service-block">
           <h4>Investor Documentation</h4>
-          <ul>
-            <li>Private placement memoranda (PPMs)</li>
-            <li>Subscription agreements</li>
-            <li>Investor questionnaires</li>
-            <li>Side letters</li>
-            <li>Capital call documentation</li>
-            <li>Investor admission and closing documents</li>
-            <li>Co-investment documentation</li>
-          </ul>
+          <p>Subscription agreements, investor questionnaires, private placement memoranda, side letters, and co-investment documentation — the full package for investor onboarding from initial close through additional closings. We also handle capital call documentation and investor admission mechanics.</p>
         </div>
-        <div class="ff-services-group">
-          <h4>Securities &amp; Regulatory</h4>
-          <ul>
-            <li>Regulation D offering compliance</li>
-            <li>Rule 506(b) and Rule 506(c) analysis</li>
-            <li>Form D filings</li>
-            <li>State blue-sky notice filings</li>
-            <li>Bad actor disqualification analysis</li>
-            <li>Exempt reporting adviser analysis</li>
-            <li>Regulation S offshore offering compliance</li>
-          </ul>
+        <div class="ff-service-block">
+          <h4>Securities &amp; Regulatory Compliance</h4>
+          <p>Regulation D offering compliance, Form D and state blue-sky notice filings, bad actor disqualification analysis, exempt reporting adviser assessment, and Regulation S structuring for offshore investor tranches alongside domestic offerings. We advise on the right exemption and what it requires — not just file the paperwork.</p>
         </div>
-        <div class="ff-services-group">
-          <h4>Ongoing &amp; Post-Closing</h4>
-          <ul>
-            <li>Additional closings</li>
-            <li>LPA and operating agreement amendments</li>
-            <li>Investor transfers and assignments</li>
-            <li>Carry and fee restructuring</li>
-            <li>Regulatory update advice</li>
-            <li>Wind-down and liquidation</li>
-          </ul>
+        <div class="ff-service-block">
+          <h4>Ongoing &amp; Post-Closing Counsel</h4>
+          <p>Amendments, additional closings, investor transfers and assignments, carry restructuring, regulatory update advice, and wind-down and liquidation counsel. Our work does not end at first close — we support the vehicle through its operating life.</p>
         </div>
-        <div class="ff-services-group">
+        <div class="ff-service-block">
           <h4>Related Counsel</h4>
-          <ul>
-            <li>RIA registration and compliance</li>
-            <li>Exempt reporting adviser filings</li>
-            <li>Marketing Rule compliance</li>
-            <li>Cross-border structuring</li>
-            <li>FIRPTA and foreign investor considerations</li>
-            <li>Cayman and offshore coordination</li>
-          </ul>
+          <p>RIA registration and exempt reporting adviser filings, Marketing Rule compliance, cross-border structuring for non-U.S. investors and sponsors, FIRPTA and foreign investor considerations, and coordination with offshore counsel for parallel Cayman or BVI structures.</p>
         </div>
       </div>
     </div>
@@ -748,20 +726,19 @@
     <div class="container">
       <p class="ff-section-label">Clients</p>
       <h2 class="ff-section-heading">Who We Represent</h2>
-      <p class="ff-section-intro">We work with a range of sponsors, managers, and investor groups — from first-time managers raising their initial vehicle to established sponsors forming successor funds and additional-close SPVs.</p>
-      <div class="ff-clients-grid">
-        <div class="ff-client-tag">First-time fund managers</div>
-        <div class="ff-client-tag">Emerging managers</div>
-        <div class="ff-client-tag">Venture capital sponsors</div>
-        <div class="ff-client-tag">Private equity sponsors</div>
-        <div class="ff-client-tag">Real estate sponsors</div>
-        <div class="ff-client-tag">Independent sponsors</div>
-        <div class="ff-client-tag">Search fund sponsors</div>
-        <div class="ff-client-tag">Angel investor groups</div>
-        <div class="ff-client-tag">Syndicate leads</div>
-        <div class="ff-client-tag">Family offices</div>
-        <div class="ff-client-tag">Entrepreneurs organizing investor groups</div>
-        <div class="ff-client-tag">International sponsors and investors</div>
+      <div class="ff-clients-wrap">
+        <div class="ff-clients-text">
+          <p>We represent the full range of private investment sponsors and managers — from individuals raising their first vehicle to established managers launching successor funds and additional-close SPVs.</p>
+          <p>Our clients include U.S.-based sponsors and international managers with Latin American investor bases, capital sources, or assets. We work with sponsors at formation and stay engaged through the vehicle's operating life.</p>
+        </div>
+        <div class="ff-clients-rows">
+          <div class="ff-clients-row">First-time and emerging managers</div>
+          <div class="ff-clients-row">Venture capital and private equity sponsors</div>
+          <div class="ff-clients-row">Real estate syndicators and fund sponsors</div>
+          <div class="ff-clients-row">Independent sponsors and search fund organizers</div>
+          <div class="ff-clients-row">Family offices and entrepreneur-organized groups</div>
+          <div class="ff-clients-row">International sponsors with LATAM connections</div>
+        </div>
       </div>
     </div>
   </section>
