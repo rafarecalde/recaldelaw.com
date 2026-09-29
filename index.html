@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recalde Law Firm — Securities, Fund Formation &amp; Cross-Border Counsel</title>
-  <meta name="description" content="Recalde Law Firm advises RIAs, fund managers, and cross-border investors on securities, fund formation, M&A, and international wealth structuring from Miami, Florida.">
+  <title>Recalde Law Firm — Securities, Fund Formation, Private Wealth &amp; Cross-Border Counsel</title>
+  <meta name="description" content="Miami counsel for securities, fund formation, M&amp;A, and Private Wealth. We advise fund managers, founders, and the private bankers, family offices, and RIAs who refer international families.">
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F983DQ22DR"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F983DQ22DR');</script>
   <!-- Open Graph -->
-  <meta property="og:title" content="Recalde Law Firm — Securities, Fund Formation & Cross-Border Counsel">
-  <meta property="og:description" content="We advise on fund formation, RIA compliance, private offerings, equity compensation, M&A, and international wealth structuring from Miami, Florida.">
+  <meta property="og:title" content="Recalde Law Firm — Securities, Fund Formation, Private Wealth & Cross-Border Counsel">
+  <meta property="og:description" content="Miami counsel for securities, fund formation, M&amp;A, and Private Wealth — for fund managers, founders, and the private bankers, family offices, and RIAs who refer international families.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://recaldelaw.com/">
   <meta property="og:image" content="https://recaldelaw.com/headshot.jpg">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Recalde Law Firm — Securities, Fund Formation & Cross-Border Counsel">
-  <meta name="twitter:description" content="We advise on fund formation, RIA compliance, private offerings, equity compensation, M&A, and international wealth structuring from Miami, Florida.">
+  <meta name="twitter:title" content="Recalde Law Firm — Securities, Fund Formation, Private Wealth & Cross-Border Counsel">
+  <meta name="twitter:description" content="Miami counsel for securities, fund formation, M&amp;A, and Private Wealth — for fund managers, founders, and the private bankers, family offices, and RIAs who refer international families.">
   <meta name="twitter:image" content="https://recaldelaw.com/headshot.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
@@ -65,6 +65,34 @@
     .pa-card-arrow { font-size: 0.8rem; font-weight: 600; color: var(--gold); letter-spacing: 0.04em; }
     @media (max-width: 768px) { .pa-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 480px) { .pa-grid { grid-template-columns: 1fr; } }
+
+    .pw-feature { background: var(--cream); padding: 72px 0; border-bottom: 1px solid var(--gray-200); }
+    .pw-feature-inner {
+      display: grid; grid-template-columns: 1.35fr 0.9fr; gap: 56px; align-items: start;
+    }
+    .pw-feature h2 {
+      font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.45rem);
+      font-weight: 500; color: var(--navy); line-height: 1.18; margin-bottom: 16px;
+    }
+    .pw-lead {
+      font-size: 0.98rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 28px; max-width: 640px;
+    }
+    .pw-links { display: flex; flex-direction: column; gap: 8px; }
+    .pw-links-label {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 4px;
+    }
+    .pw-links a {
+      display: block; padding: 14px 16px; background: var(--white);
+      border: 1px solid var(--gray-200); border-left: 2px solid var(--gold);
+      font-size: 0.88rem; font-weight: 500; color: var(--navy); line-height: 1.4;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .pw-links a:hover { color: var(--gold); border-color: var(--gold); }
+    @media (max-width: 768px) {
+      .pw-feature { padding: 56px 0; }
+      .pw-feature-inner { grid-template-columns: 1fr; gap: 32px; }
+    }
   </style>
 </head>
 <body>
@@ -77,6 +105,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
+        <li><a href="private-wealth/">Private Wealth</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="fund-formation/">Fund Formation</a></li>
         <li><a href="#about">About</a></li>
@@ -92,7 +121,7 @@
       <div class="hero-content">
         <p class="hero-kicker">Recalde Law Firm &mdash; Miami, Florida</p>
         <h1>Securities counsel for founders, fund managers, and cross-border investors.</h1>
-        <p class="hero-sub">We advise founders from seed through exit, fund managers on formation and compliance, and international investors on cross-border structuring — from Miami for clients across the U.S. and Latin America.</p>
+        <p class="hero-sub">We advise founders from seed through exit, fund managers on formation and compliance, and international investors on cross-border structuring. For Private Wealth, we work with the private bankers, family offices, and RIAs who represent international families — from Miami, for clients across the U.S. and Latin America.</p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
           <a href="#services" class="btn btn-outline">Our Practice</a>
@@ -101,12 +130,41 @@
     </div>
   </header>
 
+  <!-- Private Wealth -->
+  <section class="pw-feature" id="private-wealth">
+    <div class="container">
+      <div class="pw-feature-inner">
+        <div>
+          <p class="pa-kicker">Private Wealth</p>
+          <h2>Outside counsel for the advisers who already have the family.</h2>
+          <p class="pw-lead">Private bankers, family offices, and RIAs refer Private Wealth matters when an international family needs U.S. legal architecture — foreign grantor and non-grantor trusts, equity transferred before a liquidity event, private placement life insurance, Canada limited partnerships, and the limited $60,000 estate-tax exemption on U.S.-situs assets of a non-resident alien. The family is the end client. The relationship usually runs through the adviser.</p>
+          <a href="private-wealth/" class="btn btn-primary">Private Wealth practice</a>
+        </div>
+        <div class="pw-links">
+          <p class="pw-links-label">Selected reading</p>
+          <a href="fgt-vs-fngt-international-families/">FGT vs. FNGT for International Families</a>
+          <a href="rollover-equity-transfers-before-the-valuation-step-up/">Rollover Equity Before the Valuation Step-Up</a>
+          <a href="gifting-ahead-of-a-liquidity-event/">Gifting Ahead of a Liquidity Event</a>
+          <a href="ppli-private-placement-life-insurance-international-families/">Private Placement Life Insurance for International Families</a>
+          <a href="canada-lps-cross-border-wealth-structures/">Canada LPs in Cross-Border Wealth Structures</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Practice Area Cards -->
   <section class="pa-cards-section" id="services">
     <div class="container">
       <p class="pa-kicker">Where We Focus</p>
       <h2 class="pa-heading">Find your situation.</h2>
       <div class="pa-grid">
+
+        <a href="private-wealth/" class="pa-card">
+          <p class="pa-card-kicker">Advisers &amp; Referrers</p>
+          <h3>Private Wealth</h3>
+          <p>Outside counsel for private bankers, family offices, and RIAs on cross-border structures for international family clients — FGTs, FNGTs, offshore entities, treaties, PPLI, PFIC, and U.S. estate tax.</p>
+          <span class="pa-card-arrow">Referring counsel →</span>
+        </a>
 
         <a href="pre-seed-lawyer/" class="pa-card">
           <p class="pa-card-kicker">Founders</p>
@@ -150,13 +208,6 @@
           <span class="pa-card-arrow">International wealth structuring →</span>
         </a>
 
-        <a href="private-wealth/" class="pa-card">
-          <p class="pa-card-kicker">Advisers &amp; Referrers</p>
-          <h3>Private Wealth</h3>
-          <p>Outside counsel for private bankers, family offices, and RIAs on cross-border structures for international family clients — FGTs, FNGTs, offshore entities, treaties, PPLI, PFIC, and U.S. estate tax.</p>
-          <span class="pa-card-arrow">Referring counsel →</span>
-        </a>
-
         <a href="international-arbitration-lawyer/" class="pa-card">
           <p class="pa-card-kicker">Disputes</p>
           <h3>International Arbitration</h3>
@@ -172,7 +223,41 @@
   <section class="section" id="practice-areas">
     <div class="container">
       <h2 class="section-heading">Practice Areas</h2>
-      <p class="section-intro">We concentrate in five areas where deep regulatory knowledge and transactional precision create the most value for our clients.</p>
+      <p class="section-intro">We concentrate in six areas where deep regulatory knowledge and transactional precision create the most value for our clients. Private Wealth is one of them: counsel for international families, typically through the banker, family office, or RIA who already has the relationship.</p>
+
+      <!-- Private Wealth -->
+      <div class="practice-block" id="private-wealth-practice">
+        <div class="practice-block-header" role="button" tabindex="0" aria-expanded="false">
+          <div class="practice-block-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V10"/><path d="M10 21V10"/><path d="M14 21V10"/><path d="M18 21V10"/><path d="M2 10l10-7 10 7"/></svg>
+          </div>
+          <div class="practice-block-title">
+            <h3>Private Wealth</h3>
+            <p class="practice-block-summary">Outside counsel for private bankers, family offices, and RIAs on cross-border structures for international families.</p>
+          </div>
+          <span class="practice-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="practice-block-detail">
+          <div class="practice-detail-inner">
+            <div class="practice-description">
+              <p>Referring advisers bring us in when an international family needs U.S. legal architecture around an existing stack. We advise on foreign grantor and non-grantor trusts, offshore and intermediate entities, classification elections, and how those pieces sit together when assets and family members are in more than one country. The family is the end client. The usual conversation runs through the family's RIA, private banker, or family office.</p>
+              <p>We coordinate with tax advisers on the tax implications of each approach. We do not provide investment advice, and this is not Advisers Act or RIA-compliance counsel. Where the question is limited to how a non-U.S. person holds U.S. assets in light of the limited $60,000 estate-tax exemption, that work also sits on the <a href="wealth-structuring-foreign-nationals/" style="color:var(--gold);font-weight:500;text-decoration:none;">Wealth Structuring for Foreign Families</a> page.</p>
+            </div>
+            <div class="practice-services">
+              <h4>Representative Matters</h4>
+              <ul>
+                <li>Foreign grantor and non-grantor trust design, including Forms 3520 and 3520-A coordination</li>
+                <li>Transfers of closely held equity before a liquidity event or rollover, coordinated with deal counsel</li>
+                <li>Private placement life insurance as part of the holding stack, with product design left to the carrier and the family's insurance advisers</li>
+                <li>Canada limited partnerships, Bermuda entities, and Form 8832 classification elections</li>
+                <li>U.S. estate tax on real property, brokerage accounts, and other U.S.-situs assets, including the limited $60,000 exemption for non-resident aliens</li>
+                <li>Restructuring when someone already in the family is or becomes a U.S. person, including PFIC exposure</li>
+              </ul>
+              <p style="margin-top:20px;"><a href="private-wealth/" style="color:var(--gold);font-weight:500;text-decoration:none;font-size:0.95rem;">Private wealth — referring counsel →</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Mergers & Acquisitions -->
       <div class="practice-block" id="mergers-acquisitions">
@@ -420,7 +505,12 @@
       <p class="insights-intro">Analysis and commentary on securities regulation, fund operations, cross-border structuring, and private wealth for international families.</p>
       <div class="insights-preview">
         <div class="insights-grid">
-         <a href="why-institutional-funds-use-a-cayman-feeder/" class="insight-link">
+          <a href="fgt-vs-fngt-international-families/" class="insight-link">
+            <span class="insight-tag">Private Wealth</span>
+            <span class="insight-title">FGT vs. FNGT for International Families</span>
+            <span class="insight-date">Sep 2026</span>
+          </a>
+          <a href="why-institutional-funds-use-a-cayman-feeder/" class="insight-link">
 <span class="insight-tag">Fund Formation</span>
 <span class="insight-title">Why Institutional Funds Use a Cayman Feeder</span>
 <span class="insight-date">Apr 2026</span>
@@ -494,6 +584,16 @@
     <div class="container">
       <div class="footer-inner">
         <p class="footer-brand">Recalde Law Firm, P.A.</p>
+        <nav class="footer-practices" aria-label="Practice areas">
+          <a href="private-wealth/">Private Wealth</a>
+          <a href="fund-formation/">Fund Formation</a>
+          <a href="pre-seed-lawyer/">Pre-Seed</a>
+          <a href="series-seed-lawyer/">Series Seed</a>
+          <a href="series-a-lawyer/">Series A</a>
+          <a href="spv-formation/">SPV</a>
+          <a href="wealth-structuring-foreign-nationals/">Wealth Structuring</a>
+          <a href="international-arbitration-lawyer/">International Arbitration</a>
+        </nav>
         <p class="footer-disclaimer">This website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site.</p>
         <p class="footer-copy">&copy; 2026 Recalde Law Firm, P.A. All rights reserved.</p>
       </div>
