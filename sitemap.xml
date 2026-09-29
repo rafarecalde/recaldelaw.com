@@ -7,9 +7,9 @@
   <url><loc>https://recaldelaw.com/series-a-lawyer/</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/spv-formation/</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/wealth-structuring-foreign-nationals/</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://recaldelaw.com/private-wealth/</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://recaldelaw.com/private-wealth/</loc><lastmod>2026-09-29</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/international-arbitration-lawyer/</loc><lastmod>2026-08-07</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://recaldelaw.com/blog/</loc><lastmod>2026-09-18</lastmod><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://recaldelaw.com/blog/</loc><lastmod>2026-09-29</lastmod><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://recaldelaw.com/409a-valuation-startup-when-you-need-one/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/83b-election-founders-startup-equity/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/asset-structuring-before-major-transitions-why-timing-matters-for-international-families-and-business-owners/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
@@ -150,6 +150,31 @@
   <url>
     <loc>https://recaldelaw.com/canada-lps-cross-border-wealth-structures/</loc>
     <lastmod>2026-09-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/rollover-equity-transfers-before-the-valuation-step-up/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/family-limited-partnerships-trust-owned-lps/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/gifting-ahead-of-a-liquidity-event/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/selling-to-an-intentionally-defective-grantor-trust/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/us-gift-tax-for-nonresident-aliens/</loc>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
