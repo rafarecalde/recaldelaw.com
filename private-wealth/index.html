@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Private Wealth | Recalde Law Firm</title>
-  <meta name="description" content="Outside counsel for private bankers, family offices, and RIAs on cross-border private wealth for international family clients: FGTs, FNGTs, offshore entities, treaties, Canada LPs, Bermuda, Form 8832, U.S. estate tax, PPLI, and PFIC.">
+  <title>Private Wealth | Outside Counsel for the Advisers Who Already Have the Family — Recalde Law Firm</title>
+  <meta name="description" content="Outside counsel for the advisers who already have the family. We support private bankers, family offices, and RIAs — and the families they serve — on FGTs, FNGTs, offshore entities, treaties, Form 8832 elections, U.S. estate tax, PPLI, and PFIC.">
   <link rel="canonical" href="https://recaldelaw.com/private-wealth/">
+  <meta property="og:title" content="Private Wealth | Outside Counsel for the Advisers Who Already Have the Family — Recalde Law Firm">
+  <meta property="og:description" content="Outside counsel for the advisers who already have the family. We support private bankers, family offices, and RIAs — and the families they serve — on FGTs, FNGTs, offshore entities, treaties, Form 8832 elections, U.S. estate tax, PPLI, and PFIC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://recaldelaw.com/private-wealth/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Private Wealth | Outside Counsel for the Advisers Who Already Have the Family — Recalde Law Firm">
+  <meta name="twitter:description" content="Outside counsel for the advisers who already have the family. We support private bankers, family offices, and RIAs — and the families they serve — on FGTs, FNGTs, offshore entities, treaties, Form 8832 elections, U.S. estate tax, PPLI, and PFIC.">
   <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,6 +98,7 @@
       color: var(--gray-600);
       line-height: 1.65;
     }
+    .lp-item p + p { margin-top: 12px; }
     .lp-item a {
       color: var(--navy);
       font-weight: 500;
@@ -203,6 +211,7 @@
       flex-direction: column;
       gap: 6px;
       margin-bottom: 16px;
+      min-width: 0;
     }
     .form-group label {
       font-size: 0.8rem;
@@ -214,6 +223,9 @@
     .form-group input,
     .form-group select,
     .form-group textarea {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
       padding: 12px 14px;
       border: 1px solid var(--gray-200);
       border-radius: 4px;
@@ -255,12 +267,15 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="../" class="nav-logo">Recalde Law Firm</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="../private-wealth/">Private Wealth</a></li>
         <li><a href="../#practice-areas">Practice Areas</a></li>
         <li><a href="../blog/">Insights</a></li>
         <li><a href="../#about">About</a></li>
-        <li><a href="#contact-form" class="btn btn-nav">Refer a Matter</a></li>
+        <li><a href="#contact-form" class="btn btn-nav">Start a Conversation</a></li>
       </ul>
     </div>
   </nav>
@@ -269,10 +284,10 @@
   <header class="lp-hero">
     <div class="container">
       <p class="lp-kicker">Outside Counsel for Private Banks, Family Offices &amp; RIAs</p>
-      <h1>Referring counsel for cross-border private wealth matters.</h1>
-      <p>You already know the landscape. When an international family client needs U.S. legal architecture — FGTs, FNGTs, offshore entities, treaties, Canada LPs, Bermuda vehicles, Form 8832 elections, estate tax on brokerage and real estate, PPLI, PFIC, or a family member becoming a U.S. person — we come in alongside the RIA, the banking team, and existing counsel. The family is the end client. The relationship usually runs through you.</p>
+      <h1>Outside counsel for the advisers who already have the family.</h1>
+      <p>You know the family: their history, their goals, and what matters to them. When their situation calls for U.S. legal architecture — FGTs, FNGTs, offshore entities, treaties, Form 8832 elections, estate tax on brokerage and real estate, PPLI, PFIC, or a family member becoming a U.S. person — we work quietly alongside you. We support the relationship you have built, with care for the family, and we never replace it.</p>
       <div class="lp-hero-ctas">
-        <a href="#contact-form" class="btn btn-primary" onclick="gtag_report_conversion()">Discuss a Referral</a>
+        <a href="#contact-form" class="btn btn-primary" onclick="gtag_report_conversion()">Start a Conversation</a>
         <a href="../wealth-structuring-foreign-nationals/" class="btn btn-outline" style="border-color:rgba(255,255,255,0.35);color:rgba(255,255,255,0.85);">U.S. estate tax for foreign nationals →</a>
       </div>
     </div>
@@ -281,8 +296,8 @@
   <!-- Services -->
   <section class="lp-services">
     <div class="container">
-      <h2>Matters we take on with referring advisers</h2>
-      <p class="lp-intro">We are typically retained through the family's RIA, private banker, or family office — not as a replacement for that relationship, and not as Advisers Act or RIA-compliance counsel. This is also not a substitute for the narrower <a href="../wealth-structuring-foreign-nationals/" style="color:var(--navy);font-weight:500;">U.S. wealth structuring work</a> built around the $60,000 estate tax exemption. We advise on legal structure, coordinate with the family's tax advisers, and stay in the room with the professionals who already have the client.</p>
+      <h2>Alongside the families you serve</h2>
+      <p class="lp-intro">You are the family's trusted wealth adviser. We support you and the families you serve — quietly, and not in place of that relationship. This is not Advisers Act or RIA-compliance counsel. It is also not a substitute for the narrower <a href="../wealth-structuring-foreign-nationals/" style="color:var(--navy);font-weight:500;">U.S. wealth structuring work</a> built around the $60,000 estate tax exemption. We advise on legal structure, coordinate with the family's tax advisers, and stay alongside the professionals who already know the family.</p>
       <div class="lp-grid">
         <div class="lp-item">
           <h3>Foreign Grantor Trusts (FGTs)</h3>
@@ -295,22 +310,15 @@
         <div class="lp-item">
           <h3>Offshore Entity Coordination</h3>
           <p>Many international families already hold assets through Cayman, BVI, Panama, or similar vehicles — often formed without a coordinated U.S. legal review. We advise on how those entities interact with U.S. estate tax, income tax, reporting, and beneficial-ownership rules, and we coordinate with offshore counsel to bring the stack into a structure that banks, custodians, and counterparties will actually accept. Opacity is not the objective. Operability and compliance are.</p>
+          <p>The same work covers other vehicles families already hold, including Canadian limited partnerships and Bermuda companies, whether as a partnership or holding layer or as the licensed carrier behind an offshore PPLI policy. Formation and local licensing are handled by local counsel; we handle the U.S. legal architecture — ownership, governance, classification, reporting, and estate-tax analysis — so the documents and the banking file match the structure.</p>
         </div>
         <div class="lp-item">
           <h3>Treaty Considerations</h3>
           <p>Income-tax treaties and estate-tax treaties change the analysis — withholding rates, situs of assets, limitation-on-benefits clauses, and whether a $60,000 estate-tax exemption is the real number or whether a treaty credit or marital provision applies. We map the client's residence, citizenship, and asset situs against the applicable treaty network and coordinate with tax advisers on treaty-based positions. A structure that is efficient in one country and ignored in the other is not a plan.</p>
         </div>
         <div class="lp-item">
-          <h3>Canada Limited Partnerships</h3>
-          <p>Canadian LPs are used by international families as fiscally transparent holding and investment vehicles — often as an intermediate layer for U.S. securities, private investments, or treaty-sensitive ownership. We advise on the legal role of the LP in the stack, partner admission and governance, and how the vehicle should be classified for U.S. purposes. The partnership form is useful only if the documentation, banking, and classification elections are aligned from the outset. See <a href="../canada-lps-cross-border-wealth-structures/">Canada LPs in Cross-Border Wealth Structures</a>.</p>
-        </div>
-        <div class="lp-item">
-          <h3>Bermuda Entities</h3>
-          <p>Bermuda exempted companies, LLCs, and insurance vehicles appear frequently in serious cross-border planning — as holding companies, investment companies, and as the licensed carriers behind many offshore PPLI arrangements. We advise on where a Bermuda entity belongs in the structure, how it is owned and governed, and how it interfaces with U.S. classification, reporting, and estate-tax analysis. Formation and local licensing are handled with Bermuda counsel; we handle the U.S. legal architecture around them.</p>
-        </div>
-        <div class="lp-item">
           <h3>Form 8832 Entity Classification Elections</h3>
-          <p>U.S. tax classification of a foreign eligible entity is not automatic. Form 8832 — the check-the-box election under the IRC §7701 regulations — determines whether an entity is treated as a corporation, a partnership, or a disregarded entity. That election drives CFC and PFIC analysis, estate-tax situs, withholding, and reporting for the family. We advise referring counsel on whether and when to file, the effective-date rules, and the downstream consequences of leaving the default classification in place. See <a href="../section-8832-election-offshore-holding-structures/">The Form 8832 Election in Offshore Holding Structures</a>.</p>
+          <p>U.S. tax classification of a foreign eligible entity is not automatic. Form 8832 — the check-the-box election under the IRC §7701 regulations — determines whether an entity is treated as a corporation, a partnership, or a disregarded entity. That election drives CFC and PFIC analysis, estate-tax situs, withholding, and reporting for the family. We advise you on whether and when to file, the effective-date rules, and the downstream consequences of leaving the default classification in place. See <a href="../section-8832-election-offshore-holding-structures/">The Form 8832 Election in Offshore Holding Structures</a>.</p>
         </div>
         <div class="lp-item">
           <h3>U.S. Estate Tax: Brokerage, Real Estate &amp; Other Investments</h3>
@@ -326,7 +334,7 @@
         </div>
         <div class="lp-item">
           <h3>When a Family Member Becomes a U.S. Person</h3>
-          <p>When a family member becomes a U.S. person — a green card, substantial presence, or domicile — or when there is already a U.S. person in the family, the entire stack changes. A U.S.-born child can also be a new U.S. person. Foreign corporations can become CFCs. Holding companies can become PFICs. A foreign grantor trust can migrate into a punitive non-grantor regime. Distributions trigger Form 3520. We work with the referring RIA and counsel before that person is a U.S. taxpayer — and we restructure existing architecture when a U.S. person is already in the family. See <a href="../us-person-in-the-family-trust-pfic-implications/">When a Family Member Becomes a U.S. Person</a>, <a href="../pre-immigration-planning-what-latam-families-should-do-before-moving-to-the-us/">Pre-Immigration Planning</a>, and <a href="../controlled-foreign-corporations-what-us-shareholders-need-to-know/">Controlled Foreign Corporations</a>.</p>
+          <p>When a family member becomes a U.S. person — a green card, substantial presence, or domicile — or when there is already a U.S. person in the family, the entire stack changes. A U.S.-born child can also be a new U.S. person. Foreign corporations can become CFCs. Holding companies can become PFICs. A foreign grantor trust can migrate into a punitive non-grantor regime. Distributions trigger Form 3520. We work with you, and with the family's other counsel, before that person is a U.S. taxpayer — and we restructure existing architecture when a U.S. person is already in the family. See <a href="../us-person-in-the-family-trust-pfic-implications/">When a Family Member Becomes a U.S. Person</a>, <a href="../pre-immigration-planning-what-latam-families-should-do-before-moving-to-the-us/">Pre-Immigration Planning</a>, and <a href="../controlled-foreign-corporations-what-us-shareholders-need-to-know/">Controlled Foreign Corporations</a>.</p>
         </div>
         <div class="lp-item">
           <h3>PFIC Considerations</h3>
@@ -340,8 +348,8 @@
   <section class="lp-explainer">
     <div class="container">
       <h2>Counsel that sits next to the RIA and the bank — not in place of them</h2>
-      <p>The failure mode referring advisers already see is familiar. The family does not lack vehicles. The vehicles were assembled without a single legal architecture: a trust that is a grantor trust in one country and a non-grantor trust in another; a Bermuda or Cayman company whose default U.S. classification was never elected; a brokerage account titled in a name that is U.S.-situs for estate tax; a PPLI policy that would not survive an investor-control review; a Canadian LP that no custodian will open because the partnership agreement and KYC file do not match.</p>
-      <p>Our work is to design — or repair — that architecture so it is compliant and transparent, so a serious institution will bank it, so a trustee can administer it, and so it still holds when a child studies in the United States or a principal takes a visa. We do not sell products and we do not take the client relationship. We are the U.S. legal piece you bring in, and we coordinate with the family's tax advisers, offshore counsel, insurance carriers, and fiduciaries on the implications of each approach.</p>
+      <p>The pattern is familiar if you know the family. The family does not lack vehicles. The vehicles were assembled without a single legal architecture: a trust that is a grantor trust in one country and a non-grantor trust in another; a Bermuda or Cayman company whose default U.S. classification was never elected; a brokerage account titled in a name that is U.S.-situs for estate tax; a PPLI policy that would not survive an investor-control review; a Canadian LP that no custodian will open because the partnership agreement and KYC file do not match.</p>
+      <p>Our work is to design — or repair — that architecture so it is compliant and transparent, so a serious institution will bank it, so a trustee can administer it, and so it still holds when a child studies in the United States or a principal takes a visa. We do not sell products. We support the relationship you have built; we do not replace it. We are U.S. counsel alongside you, and we coordinate with the family's tax advisers, offshore counsel, insurance carriers, and fiduciaries on the implications of each approach.</p>
       <p>If the matter is limited to the $60,000 U.S. estate-tax exemption, FIRPTA withholding, and irrevocable trusts for foreign nationals, start with <a href="../wealth-structuring-foreign-nationals/">Wealth Structuring for Foreign Nationals</a>. This page is the broader engagement: the full stack of trusts, entities, treaties, elections, insurance wrappers, and anti-deferral rules that apply when wealth, family members, and investments sit in more than one country.</p>
     </div>
   </section>
@@ -381,8 +389,8 @@
   <!-- Contact form -->
   <section class="lp-form" id="contact-form">
     <div class="container">
-      <h2>Refer a matter, or coordinate a call.</h2>
-      <p class="lp-intro">If you are a private banker, family office, or RIA with a client situation that needs U.S. legal structure, tell us who you are and what the family stack looks like. We will schedule a conversation with you — and, when appropriate, with the family. No commitment required.</p>
+      <h2>Coordinate a conversation.</h2>
+      <p class="lp-intro">If you are a private banker, family office, or RIA, and a family you serve needs U.S. legal structure, tell us who you are and how the stack is arranged. We will schedule a conversation with you — and, when it serves the family, with them. No commitment required.</p>
       <form action="https://formspree.io/f/mqegejrg" method="POST">
         <input type="hidden" name="_subject" value="Private Wealth Inquiry — recaldelaw.com">
         <input type="hidden" name="source_page" value="Private Wealth">
@@ -420,11 +428,11 @@
             <input type="tel" id="phone" name="phone" placeholder="+1 (305) 000-0000">
           </div>
           <div class="form-group">
-            <label for="planning_focus">Matter Focus</label>
+            <label for="planning_focus">Focus</label>
             <select id="planning_focus" name="planning_focus">
               <option value="">Select one</option>
               <option>Foreign grantor / non-grantor trusts</option>
-              <option>Offshore entities (Canada LP, Bermuda, other)</option>
+              <option>Offshore entities and foreign holding structures</option>
               <option>U.S. estate tax (brokerage, real estate, investments)</option>
               <option>PPLI</option>
               <option>PFIC / U.S. person in the family</option>
@@ -466,6 +474,23 @@
     </div>
   </footer>
 
-  <script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20);});document.querySelector('form').addEventListener('submit',function(){gtag_report_conversion();});</script>
+  <script>
+    const nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20);});
+    const toggle=document.querySelector('.nav-toggle');
+    const navLinks=document.querySelector('.nav-links');
+    toggle.addEventListener('click',()=>{
+      const expanded=toggle.getAttribute('aria-expanded')==='true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link=>{
+      link.addEventListener('click',()=>{
+        toggle.setAttribute('aria-expanded','false');
+        navLinks.classList.remove('open');
+      });
+    });
+    document.querySelector('form').addEventListener('submit',function(){gtag_report_conversion();});
+  </script>
 </body>
 </html>
