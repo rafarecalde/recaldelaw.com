@@ -201,6 +201,15 @@
 .article-content em {
   font-style: italic;
 }
+.article-content a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  transition: color var(--transition);
+}
+.article-content a:hover {
+  color: var(--navy);
+}
 
 /* Article Footer / CTA */
 .article-cta {
