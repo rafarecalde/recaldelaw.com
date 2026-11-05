@@ -14,7 +14,7 @@
   <url><loc>https://recaldelaw.com/form-3520-penalty-abatement/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/ppli-private-placement-life-insurance/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/foreign-trust-us-beneficiaries/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://recaldelaw.com/blog/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://recaldelaw.com/blog/</loc><lastmod>2026-11-05</lastmod><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://recaldelaw.com/409a-valuation-startup-when-you-need-one/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/83b-election-founders-startup-equity/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/asset-structuring-before-major-transitions-why-timing-matters-for-international-families-and-business-owners/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
@@ -321,6 +321,12 @@
   <url>
     <loc>https://recaldelaw.com/planificacion-antes-hijo-us-person-trust/</loc>
     <lastmod>2026-10-30</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/cayman-sandwich-foreign-trust/</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <changefreq>yearly</changefreq>
   </url>
