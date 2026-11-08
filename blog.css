@@ -306,14 +306,28 @@
   color: var(--navy);
   width: 28%;
 }
-.compare-hint {
-  font-size: 0.8rem;
-  color: var(--gray-600);
-  margin: 0 0 24px;
-}
 @media (max-width: 720px) {
-  .compare-scroll { overflow: visible; border: none; }
-  .compare-table { min-width: 0; }
+  .compare-scroll {
+    overflow: visible;
+    border: none;
+    width: 100%;
+  }
+  .compare-table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+  .compare-table caption {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    padding: 0 0 12px;
+  }
   .compare-table thead {
     position: absolute;
     width: 1px;
