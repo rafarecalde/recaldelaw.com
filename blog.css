@@ -306,11 +306,6 @@
   color: var(--navy);
   width: 28%;
 }
-.compare-hint {
-  font-size: 0.8rem;
-  color: var(--gray-600);
-  margin: 0 0 24px;
-}
 @media (max-width: 720px) {
   .compare-scroll {
     overflow: visible;
