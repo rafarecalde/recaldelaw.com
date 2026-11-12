@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructuras de tenencia para inversiones en Estados Unidos — Recalde Law Firm</title>
+  <meta name="description" content="Abogado de Estados Unidos para la capa que tiene las inversiones: una Canada LP, una Wyoming LLC como general partner, el Form 8832 y el titular de la cuenta.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://recaldelaw.com/estructuras-holding-inversiones-estados-unidos/">
+  <meta property="og:title" content="Estructuras de tenencia para inversiones en Estados Unidos — Recalde Law Firm">
+  <meta property="og:description" content="Abogado de Estados Unidos para la capa que tiene las inversiones: una Canada LP, una Wyoming LLC como general partner, el Form 8832 y el titular de la cuenta.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://recaldelaw.com/estructuras-holding-inversiones-estados-unidos/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Estructuras de tenencia para inversiones en Estados Unidos — Recalde Law Firm">
+  <meta name="twitter:description" content="Abogado de Estados Unidos para la capa que tiene las inversiones: una Canada LP, una Wyoming LLC como general partner, el Form 8832 y el titular de la cuenta.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F983DQ22DR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F983DQ22DR');gtag('config','AW-1020943370');</script>
+  <style>
+    /* Landing page overrides */
+    .lp-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 100px 0 80px;
+    }
+    .lp-hero .container {
+      max-width: 740px;
+    }
+    .lp-kicker {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .lp-hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .lp-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.75;
+      max-width: 600px;
+      margin-bottom: 36px;
+    }
+    .lp-hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* What we handle */
+    .lp-services {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .lp-services h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .lp-services .lp-intro {
+      font-size: 1rem;
+      color: var(--gray-600);
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+    .lp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .lp-item {
+      border-left: 2px solid var(--gold);
+      padding-left: 20px;
+    }
+    .lp-item h3 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .lp-item p {
+      font-size: 0.93rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+    }
+    .lp-item p + p { margin-top: 12px; }
+    .lp-item a {
+      color: var(--navy);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .lp-item a:hover { color: var(--gold); }
+
+    /* Explainer */
+    .lp-explainer {
+      background: var(--cream);
+      padding: 80px 0;
+    }
+    .lp-explainer .container {
+      max-width: 700px;
+    }
+    .lp-explainer h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+    .lp-explainer p {
+      font-size: 1rem;
+      color: var(--gray-700);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .lp-explainer a {
+      color: var(--navy);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .lp-explainer a:hover { color: var(--gold); }
+
+    /* Related reading */
+    .lp-related {
+      padding: 72px 0;
+      background: var(--white);
+    }
+    .lp-related h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .lp-related .lp-intro {
+      font-size: 1rem;
+      color: var(--gray-600);
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .lp-related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .lp-related a {
+      display: block;
+      padding: 18px 20px;
+      border: 1px solid var(--gray-200);
+      border-left: 2px solid var(--gold);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--navy);
+      line-height: 1.45;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .lp-related a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Contact form */
+    .lp-form {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .lp-related + .lp-form {
+      background: var(--cream);
+    }
+    .lp-form .container {
+      max-width: 600px;
+    }
+    .lp-form h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .lp-form .lp-intro {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+      min-width: 0;
+    }
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      padding: 12px 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--navy);
+      background: var(--white);
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-submit {
+      margin-top: 8px;
+    }
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+      .lp-hero-ctas { flex-direction: column; }
+    }
+  
+    .lp-advisers {
+      background: var(--navy);
+      color: var(--white);
+      padding: 72px 0;
+    }
+    .lp-advisers .container { max-width: 740px; }
+    .lp-advisers h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .lp-advisers p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .lp-advisers a {
+      color: var(--gold);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .lp-advisers a:hover { color: var(--white); }
+
+  
+    .lp-jurisdiction {
+      background: #f7f4ef;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .lp-jurisdiction .container { max-width: 740px; }
+    .lp-jurisdiction p {
+      font-size: 0.92rem;
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+  </style>
+  <script>function gtag_report_conversion(url){var callback=function(){if(typeof(url)!='undefined'){window.location=url;}};gtag('event','conversion',{'send_to':'AW-1020943370/CXe2CPPUwMIZEIq46eYD','event_callback':callback});return false;}</script>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Recalde Law Firm</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../private-wealth/">Private Wealth</a></li>
+        <li><a href="../#practice-areas">Áreas de Práctica</a></li>
+        <li><a href="../blog/">Publicaciones</a></li>
+        <li><a href="../#about">Sobre Rafael</a></li>
+        <li><a href="#contact-form" class="btn btn-nav">Iniciar una conversación</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="lp-hero">
+    <div class="container">
+      <p class="lp-kicker">Estructuras de tenencia</p>
+      <h1>Estructuras de tenencia para inversiones en Estados Unidos, documentadas para que el custodio pueda abrir la cuenta.</h1>
+      <p>La familia y sus asesores muchas veces ya tienen un Trust o una sociedad fuera de Estados Unidos. La pregunta del lado estadounidense es la capa que será dueña de la cuenta de brokerage, de la participación en el fondo o del inmueble en Florida: qué es, cómo la clasifica Estados Unidos y a nombre de quién queda la cuenta. Coordinamos esa arquitectura con el abogado local. No lo reemplazamos.</p>
+      <div class="lp-hero-ctas">
+        <a href="#contact-form" class="btn btn-primary" onclick="gtag_report_conversion()">Iniciar una conversación</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="lp-jurisdiction">
+    <div class="container">
+      <p>Recalde Law Firm, P.A. es un bufete de Florida, con oficina en Miami, Florida. Asesoramos únicamente en derecho de los Estados Unidos. No ejercemos derecho mexicano y no damos asesoría fiscal ni sucesoria de México. No ejercemos el derecho de ningún otro país. La constitución de una entidad fuera de Estados Unidos, y el derecho local de esa jurisdicción, corresponden al abogado local. Nosotros nos ocupamos de la arquitectura del lado estadounidense: la clasificación, los documentos que leerán un custodio y un tribunal de Estados Unidos, y la coordinación con el asesor fiscal de la familia.</p>
+    </div>
+  </section>
+
+  <section class="lp-services">
+    <div class="container">
+      <h2>Lo que el expediente de Estados Unidos tiene que responder</h2>
+      <p class="lp-intro">El conjunto habitual no es un producto. Es una limited partnership de Canadá, una limited liability company de Wyoming como general partner, y una posición de clasificación en el Form 8832 que coincida con la cuenta que el banco va a titular. El trabajo del Trust está en <a href="../foreign-trusts/">Foreign Trusts</a>. La apertura de la cuenta está en <a href="../us-accounts-for-foreign-structures/">cuentas en Estados Unidos para un foreign trust o una entidad de tenencia</a>.</p>
+      <div class="lp-grid">
+        <div class="lp-item">
+          <h3>Una Canada LP como capa de inversión</h3>
+          <p>Una limited partnership provincial es una forma comercial que los bancos ya reconocen. Puede quedar entre un foreign trust, o una sociedad holding extranjera, y una cartera de valores de Estados Unidos. No es un vehículo de opacidad y no es un Trust. La constitución en Canadá, el registro extra-provincial y la residencia fiscal canadiense son del abogado canadiense. La clasificación para Estados Unidos, el situs del estate tax y el encaje con el Trust son de este lado. Vea <a href="../canada-lps-cross-border-wealth-structures/">Canada LPs in cross-border wealth structures</a>.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Una Wyoming LLC como general partner</h3>
+          <p>El general partner suele ser una LLC de Wyoming para que firme un administrador definido, no un miembro de la familia a título personal. La LLC es una entidad de Estados Unidos. Su clasificación, su responsible party y, si la dueña es una persona extranjera, el Form 5472, son preguntas distintas de las de la partnership. No constituimos la LLC para evitar leer quién puede obligar a la partnership.</p>
+        </div>
+        <div class="lp-item">
+          <h3>El Form 8832 y la clasificación que nadie presentó</h3>
+          <p>Una entidad extranjera elegible no es automáticamente partnership ni corporation. La clasificación por defecto depende de la responsabilidad limitada. El Form 8832 es la elección que cambia ese defecto, y la fecha efectiva tiene una ventana. Una partnership que todos llaman transparente, y que el reglamento trataría como corporation, no es un plan. El asesor fiscal modela los números. Nosotros alineamos la elección con el cuadro de dueños y con el título de la cuenta. Vea <a href="../section-8832-election-offshore-holding-structures/">la elección del Form 8832</a>.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Quién es el titular de la cuenta</h3>
+          <p>El custodio titula la cuenta a un nombre legal. Si la dueña es la limited partnership, la cuenta es de la partnership, no del general partner y no de un familiar. Una cuenta a nombre personal, o a nombre del GP porque así fue más corto el expediente, deshace la estructura aunque el contrato de la partnership esté limpio. La diligencia de beneficial owner igual mira a las personas. El título y el look-through son preguntas distintas.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Una sociedad entre la familia y los activos</h3>
+          <p>Algunas familias usan una sociedad extranjera, a menudo entre el Trust y los activos de Estados Unidos, en lugar de una partnership. Esa sociedad suele ser una corporation para efectos de Estados Unidos, salvo que una entidad elegible elija otra cosa. El tratamiento corporativo y el de partnership responden de manera distinta el situs del estate tax y la exposición a PFIC. No recomendamos una jurisdicción como eslogan. Vea <a href="../cayman-sandwich-foreign-trust/">una sociedad entre la familia y los activos</a>.</p>
+        </div>
+        <div class="lp-item">
+          <h3>Partnerships cuyo socio es un Trust</h3>
+          <p>Cuando el limited partner es un Trust, el contrato de la partnership y el instrumento del Trust tienen que nombrar al mismo trustee, y ese trustee tiene que ser alguien que el custodio acepte. Vea <a href="../family-limited-partnerships-trust-owned-lps/">family limited partnerships and trust-owned LPs</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-explainer">
+    <div class="container">
+      <h2>Una cuenta, varios nombres legales</h2>
+      <p>Una estructura que vemos con frecuencia para familias de México, Colombia o Chile es un foreign trust, o una sociedad holding que la familia ya tiene, por encima de una Canada LP, con una Wyoming LLC como general partner, dueña de una cuenta de brokerage en Estados Unidos. El mismo conjunto aparece en familias de Brasil, Argentina o Panamá cuando los activos son valores estadounidenses y la familia quiere una sola cuenta que el banco titule a nombre de la partnership. Las consecuencias de ese Trust o de esa sociedad en el país de origen se quedan con el abogado de ese país. Nosotros leemos el lado de Estados Unidos: quién es dueño de la participación, cómo clasifica el Form 8832 a las entidades, y si el título de la cuenta coincide con la escritura.</p>
+      <p>La falla habitual es ordinaria. El contrato se firma en un país. Los documentos de suscripción nombran a otro dueño. El custodio abre la cuenta a nombre del general partner porque el expediente de KYC era más corto. Después un hijo se vuelve US person, y la clasificación que era tolerable mientras todos eran personas no estadounidenses pasa a ser una pregunta de PFIC, de CFC o de una partnership con su propia declaración. Reimprimir el organigrama no lo arregla.</p>
+      <p>No vendemos una entidad. Coordinamos con el abogado que la constituye, con el asesor fiscal que va a vivir con la clasificación, y con el asesor que necesita que la cuenta se abra. Si el asunto es el Trust, empiece en <a href="../foreign-trusts/">Foreign Trusts</a>. La versión en inglés de esta página es <a href="../holding-structures-us-investments/">Holding Structures for U.S. Investments</a>.</p>
+    </div>
+  </section>
+
+  <section class="lp-advisers" id="with-advisers">
+    <div class="container">
+      <h2>Con el banquero, el RIA o el family office</h2>
+      <p>El banquero privado y el RIA conservan la relación. Traen el asunto cuando el cliente necesita una capa de tenencia que el custodio pueda recibir: un nombre legal, una clasificación, un EIN y una lista de quién puede dar instrucciones. Diseñamos o reparamos esa arquitectura de Estados Unidos para que la cuenta pueda abrirse y el trabajo del asesor pueda seguir. La gestión de la cartera se queda con el asesor. El asesor fiscal prepara las declaraciones. El bufete asigna la responsabilidad de la clasificación.</p>
+      <p><a href="../counsel-for-wealth-advisers/">Counsel for wealth advisers</a> &nbsp;·&nbsp; <a href="../cuentas-us-foreign-trust-entidad-holding/">Cuentas en Estados Unidos</a> &nbsp;·&nbsp; <a href="../foreign-trusts/">Foreign trusts</a> &nbsp;·&nbsp; <a href="../private-wealth/">Private wealth</a></p>
+    </div>
+  </section>
+
+  <section class="lp-related">
+    <div class="container">
+      <h2>Lecturas relacionadas</h2>
+      <p class="lp-intro">Las notas que están detrás de esta página. No las reescribimos.</p>
+      <div class="lp-related-grid">
+        <a href="../holding-structures-us-investments/">Holding Structures for U.S. Investments</a>
+        <a href="../canada-lps-cross-border-wealth-structures/">Canada LPs in Cross-Border Wealth Structures</a>
+        <a href="../section-8832-election-offshore-holding-structures/">The Form 8832 Election</a>
+        <a href="../cayman-sandwich-foreign-trust/">A Company Between the Family and the Assets</a>
+        <a href="../family-limited-partnerships-trust-owned-lps/">Family Limited Partnerships and Trust-Owned LPs</a>
+        <a href="../cuentas-us-foreign-trust-entidad-holding/">Cuentas en Estados Unidos para un foreign trust o una entidad de tenencia</a>
+        <a href="../foreign-trusts/">Foreign Trusts</a>
+        <a href="../private-wealth/">Private Wealth</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-form" id="contact-form">
+    <div class="container">
+      <h2>Coordinar una conversación.</h2>
+      <p class="lp-intro">Escriba como la familia, o como el asesor. Cuéntenos quién es dueño de los bienes y qué dicen hoy los documentos. Coordinaremos una conversación. No hay compromiso.</p>
+      <form action="https://formspree.io/f/mqegejrg" method="POST">
+        <input type="hidden" name="_subject" value="Consulta estructuras de tenencia — recaldelaw.com">
+        <input type="hidden" name="source_page" value="Estructuras de tenencia">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Su nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="usted@correo.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firm">Familia o institución</label>
+            <input type="text" id="firm" name="firm" placeholder="Familia, banco, RIA, family office o bufete">
+          </div>
+          <div class="form-group">
+            <label for="role">Su función</label>
+            <select id="role" name="role">
+              <option value="">Seleccione</option>
+              <option>Miembro de la familia</option>
+              <option>Banquero privado</option>
+              <option>Family office</option>
+              <option>RIA / asesor de inversiones</option>
+              <option>Planificador patrimonial</option>
+              <option>Abogado actual</option>
+              <option>Asesor fiscal</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (305) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="planning_focus">Enfoque</label>
+            <select id="planning_focus" name="planning_focus">
+              <option value="">Seleccione</option>
+              <option>Canada LP / GP de Wyoming</option>
+              <option>Clasificación Form 8832</option>
+              <option>Titular de la cuenta</option>
+              <option>Partnership de un Trust</option>
+              <option>Sociedad extranjera sobre activos de EE.UU.</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Resumen de la situación</label>
+          <textarea id="message" name="message" placeholder="Jurisdicciones, quién es dueño de los bienes, si hay una US person en la familia, y qué necesita del abogado de Estados Unidos. Omita lo que no quiera compartir antes de una revisión de conflictos."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        <p class="form-note">Normalmente respondemos en un día hábil. Este formulario no crea una relación abogado-cliente. Omita lo que no quiera compartir antes de una revisión de conflictos. Asesoramos sobre la estructura legal, no sobre resultados fiscales, y coordinamos con el asesor fiscal de la familia. Recalde Law Firm, P.A. asesora únicamente en derecho de los Estados Unidos, desde su oficina en Miami, Florida.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-brand">Recalde Law Firm, P.A.</p>
+        <nav class="footer-practices" aria-label="Practice areas">
+          <a href="../private-wealth/">Private Wealth</a>
+          <a href="../foreign-trusts/">Foreign Trusts</a>
+          <a href="../holding-structures-us-investments/">Holding Structures</a>
+          <a href="../us-accounts-for-foreign-structures/">U.S. Accounts</a>
+          <a href="../florida-real-estate-foreign-owners/">Florida Real Estate</a>
+          <a href="../private-trust-companies/">Private Trust Companies</a>
+          <a href="../pre-immigration-planning/">Pre-Immigration</a>
+          <a href="../foreign-trust-us-beneficiaries/">U.S. Beneficiaries</a>
+          <a href="../ppli-private-placement-life-insurance/">PPLI</a>
+          <a href="../form-3520-penalty-abatement/">Form 3520 Penalty</a>
+          <a href="../counsel-for-wealth-advisers/">For Advisers</a>
+          <a href="../fund-formation/">Fund Formation</a>
+          <a href="../wealth-structuring-foreign-nationals/">Wealth Structuring</a>
+          <a href="../international-arbitration-lawyer/">International Arbitration</a>
+        </nav>
+        <p class="footer-disclaimer">Este sitio web es únicamente informativo y no constituye asesoría legal. El uso de este sitio no establece una relación abogado-cliente. Asesoramos sobre la estructura legal, no sobre resultados fiscales. Recalde Law Firm, P.A. tiene oficina en Miami, Florida, y asesora únicamente en derecho de los Estados Unidos.</p>
+        <p class="footer-copy">&copy; 2026 Recalde Law Firm, P.A. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20);});
+    const toggle=document.querySelector('.nav-toggle');
+    const navLinks=document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click',()=>{
+        const expanded=toggle.getAttribute('aria-expanded')==='true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        navLinks.classList.toggle('open');
+      });
+      navLinks.querySelectorAll('a').forEach(link=>{
+        link.addEventListener('click',()=>{
+          toggle.setAttribute('aria-expanded','false');
+          navLinks.classList.remove('open');
+        });
+      });
+    }
+    const form=document.querySelector('form');
+    if (form && typeof gtag_report_conversion==='function') {
+      form.addEventListener('submit',function(){gtag_report_conversion();});
+    }
+  </script>
+</body>
+</html>
