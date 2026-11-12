@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://recaldelaw.com/</loc><lastmod>2026-11-07</lastmod><priority>1.0</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://recaldelaw.com/fund-formation/</loc><lastmod>2026-11-07</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://recaldelaw.com/cayman-funds/</loc><lastmod>2026-11-07</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://recaldelaw.com/fund-formation/</loc><lastmod>2026-11-12</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://recaldelaw.com/cayman-funds/</loc><lastmod>2026-11-12</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/pre-seed-lawyer/</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/series-seed-lawyer/</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://recaldelaw.com/series-a-lawyer/</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
@@ -69,7 +69,7 @@
   <url><loc>https://recaldelaw.com/panama-convention-inter-american-arbitration/</loc><lastmod>2026-08-02</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/planificacion-patrimonial-familias-activos-dos-paises/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/planificacion-previa-inmigracion-residencia-estados-unidos/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://recaldelaw.com/pfic-rules-cross-border-investors/</loc><lastmod>2026-08-13</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://recaldelaw.com/pfic-rules-cross-border-investors/</loc><lastmod>2026-11-12</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/pre-immigration-planning-what-latam-families-should-do-before-moving-to-the-us/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/preferred-equity-growth-rounds-what-founders-miss/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/private-fund-subscription-agreement-what-managers-miss/</loc><lastmod>2026-07-24</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
@@ -150,7 +150,7 @@
   </url>
   <url>
     <loc>https://recaldelaw.com/section-8832-election-offshore-holding-structures/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -383,4 +383,76 @@
   <url><loc>https://recaldelaw.com/who-is-a-us-person-trust-planning/</loc><lastmod>2026-11-12</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/separate-trust-for-us-beneficiary/</loc><lastmod>2026-11-12</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://recaldelaw.com/trust-separado-beneficiario-us-person/</loc><lastmod>2026-11-12</lastmod><priority>0.6</priority><changefreq>yearly</changefreq></url>
+  <url>
+    <loc>https://recaldelaw.com/foreign-fund-liability-clause-us-classification/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/when-fund-and-class-are-not-the-same-entity/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/inconsistent-fund-documents-us-classification/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/amending-fund-documents-vs-form-8832/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/form-8832-seventy-five-day-effective-date/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/changing-entity-classification-deemed-liquidation/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/qef-election-does-not-reach-lower-tier-pfic/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/classifying-lower-tier-funds-as-partnerships-pfic/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/qef-annual-information-statement-requirements/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/money-market-fund-pfic-cash-sleeve/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/pfic-first-year-election-cliff/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://recaldelaw.com/pfic-information-rights-in-fund-documents/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>
