@@ -225,6 +225,44 @@
     }
     .cf-reading a:hover { border-color: var(--gold); color: var(--gold); }
     .cf-reading a::after { content: ' →'; font-weight: 400; }
+    .cf-reading-us {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--gray-200);
+    }
+    .cf-reading-us h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .cf-reading-us p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--gray-600);
+      max-width: 720px;
+      margin-bottom: 14px;
+    }
+    .cf-reading-us ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 32px;
+    }
+    .cf-reading .cf-reading-us a {
+      display: inline;
+      padding: 0;
+      background: transparent;
+      border: none;
+      font-size: 0.86rem;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+    .cf-reading .cf-reading-us a::after { content: none; }
+    .cf-reading .cf-reading-us a:hover { color: var(--gold); }
     .cf-form-section { background: var(--white); padding: 80px 0; }
     .cf-form-wrap { max-width: 780px; margin: 0 auto; }
     .cf-form { margin-top: 28px; }
@@ -276,6 +314,7 @@
       .cf-scope-grid,
       .cf-decision-grid,
       .cf-reading-grid,
+      .cf-reading-us ul,
       .cf-form-row { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
@@ -444,6 +483,24 @@
         <a href="../fund-formation/">Fund formation and other private vehicles</a>
         <a href="../what-is-eci-and-why-it-matters-when-structuring-an-offshore-fund/">ECI and offshore fund structuring</a>
         <a href="../private-fund-subscription-agreement-what-managers-miss/">What managers miss in a subscription agreement</a>
+      </div>
+      <div class="cf-reading-us">
+        <h3>U.S. classification and PFIC tiers</h3>
+        <p>A separate set of notes on the U.S. tax reading of a foreign-sponsored fund. They sit beside the four operational notes above. They are United States law only, and they are not Cayman legal advice.</p>
+        <ul>
+          <li><a href="../foreign-fund-liability-clause-us-classification/">The liability clause that sets the U.S. default</a></li>
+          <li><a href="../when-fund-and-class-are-not-the-same-entity/">When the fund and the class are not the same entity</a></li>
+          <li><a href="../inconsistent-fund-documents-us-classification/">Grading inconsistent fund documents</a></li>
+          <li><a href="../amending-fund-documents-vs-form-8832/">Amending the documents versus Form 8832</a></li>
+          <li><a href="../form-8832-seventy-five-day-effective-date/">The seventy-five-day effective date</a></li>
+          <li><a href="../changing-entity-classification-deemed-liquidation/">An elective change is a deemed transaction</a></li>
+          <li><a href="../qef-election-does-not-reach-lower-tier-pfic/">A top-tier QEF election does not reach the bottom</a></li>
+          <li><a href="../classifying-lower-tier-funds-as-partnerships-pfic/">Lower-tier partnerships and the reporting count</a></li>
+          <li><a href="../qef-annual-information-statement-requirements/">What the annual information statement requires</a></li>
+          <li><a href="../money-market-fund-pfic-cash-sleeve/">The cash-sleeve holding you cannot elect over</a></li>
+          <li><a href="../pfic-first-year-election-cliff/">The first-year election</a></li>
+          <li><a href="../pfic-information-rights-in-fund-documents/">Information rights before the offering</a></li>
+        </ul>
       </div>
     </div>
   </section>
