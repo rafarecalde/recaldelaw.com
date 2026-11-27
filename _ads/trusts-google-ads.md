@@ -12,7 +12,7 @@ Character counts below were checked against the 30-character headline limit and 
 
 ## Why these ads are not tombstone ads
 
-Rule 4-7.19(a) requires a lawyer to file a public-media advertisement with The Florida Bar before, or at the time of, first dissemination, unless an exemption in Rule 4-7.20 applies.
+Rule 4-7.19(a) requires a lawyer to file each non-exempt advertisement with The Florida Bar at least 20 days before it is first disseminated.
 
 Rule 4-7.20(a) exempts an ad that contains no illustrations and no information other than the presumptively valid “tombstone” content in Rule 4-7.16. The Florida Bar’s public summary of that list, for a lawyer or law firm, is: firm and lawyer names, office location, phone, website, email, a designation such as “attorney” or “law firm,” fields of law in which the lawyer actually practices, bar membership and dates, education, languages, and a short list of other factual items (including a fee schedule, which this draft does not use). A call to action, a description of what a trust does, a mention of children, probate, homestead, or a named trust product is outside that list.
 
@@ -39,7 +39,7 @@ Pin headline 1 to position 1. Pin headline 2 to position 2.
 | 5 | Living Trusts in Florida | 24 | No. Specific service, not just the field name. |
 | 6 | Revocable Living Trusts | 23 | No. Specific document. |
 | 7 | Plan for Minor Children | 23 | No. Describes the work. |
-| 8 | Florida Homestead Trusts | 24 | No. Homestead is a legal limit, and the line can sound like a product. |
+| 8 | Florida Homes in a Trust | 24 | No. Describes a home in a trust. |
 | 9 | Schedule a Consultation | 23 | No. Call to action. |
 | 10 | Trusts for Homeowners | 21 | No. Audience line. |
 | 11 | Trusts for Business Owners | 26 | No. Audience line. |
@@ -83,7 +83,7 @@ Descriptions:
 
 1. (85) Parents nominate a guardian for a minor child. A Florida court makes the appointment.
 2. (78) Homestead has its own rules when a spouse or a minor child survives the owner.
-3. (78) We sign the documents, then retitle the home, accounts, and company interests.
+3. (83) After signing, the home, accounts, and company interests are retitled to the trust.
 4. (79) Recalde Law Firm, Miami. Schedule a consultation about a trust for your family.
 
 ## Ad 3 — Irrevocable trusts (SLAT, ILIT, dynasty)
